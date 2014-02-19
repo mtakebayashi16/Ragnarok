@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x9492650" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0xe0a75a0" />
+  <item nodeId="node-0x9492650">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+  
+Ragnarok
+An Interactive Fiction by Marissa Takebayashi
+Release 1 / Serial number 140219 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Portal Room
+ 
+
+You can see a large gate and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">NO</temporary>
+    <children>
+      <child nodeId="node-0x94f1020" />
+      <child nodeId="node-0x9559930" />
+    </children>
+  </item>
+  <item nodeId="node-0x9559930">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Underworld
+ 
+
+You can see Gjallarhorn here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="64">YES</temporary>
+    <children>
+      <child nodeId="node-0x778a7c0" />
+      <child nodeId="node-0x94e2dd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x94e2dd0">
+    <command xml:space="preserve">unlock gatw</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="45">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4ba920" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4ba920">
+    <command xml:space="preserve">unlock large gate</command>
+    <result xml:space="preserve">What do you want to unlock the large gate with?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="45">YES</temporary>
+    <children>
+      <child nodeId="node-0xe081ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe081ee0">
+    <command xml:space="preserve">golden key</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="44">YES</temporary>
+  </item>
+  <item nodeId="node-0x778a7c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Portal Room
+ 
+
+You can see a large gate and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="64">YES</temporary>
+    <children>
+      <child nodeId="node-0x774f980" />
+      <child nodeId="node-0xe091420" />
+    </children>
+  </item>
+  <item nodeId="node-0xe091420">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+ 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="64">YES</temporary>
+    <children>
+      <child nodeId="node-0xe07d4b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe07d4b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Forest Clearing
+ 
+
+ 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="64">YES</temporary>
+    <children>
+      <child nodeId="node-0x94eddb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x94eddb0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Midgard
+ 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="64">YES</temporary>
+    <children>
+      <child nodeId="node-0x950e700" />
+    </children>
+  </item>
+  <item nodeId="node-0x950e700">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Portal Room
+ 
+
+You can see a large gate and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="64">YES</temporary>
+    <children>
+      <child nodeId="node-0x7733b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x7733b10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the large gate)
+
+Valhalla
+ 
+
+ 
+
+You can also see Asgard&apos;s Gate and a large gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="63">YES</temporary>
+  </item>
+  <item nodeId="node-0x774f980">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="52">YES</temporary>
+    <children>
+      <child nodeId="node-0x76ed7f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x76ed7f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+ 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="52">YES</temporary>
+    <children>
+      <child nodeId="node-0x95209f0" />
+      <child nodeId="node-0x7743c00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7743c00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Forest Clearing
+ 
+
+ 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+  </item>
+  <item nodeId="node-0x95209f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Portal Room
+ 
+
+You can see a large gate and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x96eacd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x96eacd0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0759c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0759c0">
+    <command xml:space="preserve">x large gate</command>
+    <result xml:space="preserve"> gsdhfj
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+  </item>
+  <item nodeId="node-0x94f1020">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">kgkj 
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0x5196a20" />
+      <child nodeId="node-0xa4a2d90" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4a2d90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Underworld
+ 
+
+You can see Gjallarhorn here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0x7743bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7743bb0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Portal Room
+ 
+
+You can see a large gate and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0bd680" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0bd680">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+ 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0a75a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0a75a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve"> 
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="88">YES</temporary>
+  </item>
+  <item nodeId="node-0x5196a20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="26">YES</temporary>
+  </item>
+</Skein>
