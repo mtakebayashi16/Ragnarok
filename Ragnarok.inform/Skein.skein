@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x6acf740" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x5659190" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x6acf740" />
-  <item nodeId="node-0x6acf740">
+  <activeNode nodeId="node-0x5658470" />
+  <item nodeId="node-0x5659190">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -11,27 +11,48 @@
   
 Ragnarok
 An Interactive Fiction by Marissa Takebayashi
-Release 1 / Serial number 140225 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140227 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Portal Room
  
 
- 
+You can see a large gate, a statue and Heimdallr here.
 
-You can also see a large gate and Heimdallr here.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2">NO</temporary>
+    <children>
+      <child nodeId="node-0x56576d0" />
+      <child nodeId="node-0x5657d00" />
+      <child nodeId="node-0x5658b90" />
+      <child nodeId="node-0x5658710" />
+      <child nodeId="node-0x5658630" />
+      <child nodeId="node-0x5658470" />
+    </children>
+  </item>
+  <item nodeId="node-0x5658470">
+    <command xml:space="preserve">break statue</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="7">NO</temporary>
+    <temporary score="1">YES</temporary>
     <children>
-      <child nodeId="node-0x9fb03e0" />
-      <child nodeId="node-0x9f9a970" />
-      <child nodeId="node-0x6acf6d0" />
-      <child nodeId="node-0x9f91970" />
+      <child nodeId="node-0x56584e0" />
     </children>
   </item>
-  <item nodeId="node-0x9f91970">
+  <item nodeId="node-0x56584e0">
+    <command xml:space="preserve">breaking statue</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+  </item>
+  <item nodeId="node-0x5658630">
     <command xml:space="preserve">ask heimdallr to open gate</command>
     <result xml:space="preserve">I didn&apos;t understand that sentence.
 
@@ -40,10 +61,10 @@ You can also see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x9f8f870" />
+      <child nodeId="node-0x56586c0" />
     </children>
   </item>
-  <item nodeId="node-0x9f8f870">
+  <item nodeId="node-0x56586c0">
     <command xml:space="preserve">ask heimdallr for open gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -52,7 +73,7 @@ You can also see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="6">YES</temporary>
   </item>
-  <item nodeId="node-0x6acf6d0">
+  <item nodeId="node-0x5658710">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -61,12 +82,12 @@ You can also see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0fa0" />
-      <child nodeId="node-0x9f9a8d0" />
-      <child nodeId="node-0x9f9a880" />
+      <child nodeId="node-0x5658810" />
+      <child nodeId="node-0x5658870" />
+      <child nodeId="node-0x5658780" />
     </children>
   </item>
-  <item nodeId="node-0x9f9a880">
+  <item nodeId="node-0x5658780">
     <command xml:space="preserve">read pg 2</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -75,7 +96,7 @@ You can also see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="3">YES</temporary>
   </item>
-  <item nodeId="node-0x9f9a8d0">
+  <item nodeId="node-0x5658870">
     <command xml:space="preserve">read page 1</command>
     <result xml:space="preserve">(in the old book)
 You read: &quot; About the Ragnarok. &quot;
@@ -85,10 +106,10 @@ You read: &quot; About the Ragnarok. &quot;
     <changed>YES</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x9f9a920" />
+      <child nodeId="node-0x56588c0" />
     </children>
   </item>
-  <item nodeId="node-0x9f9a920">
+  <item nodeId="node-0x56588c0">
     <command xml:space="preserve">next page</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -97,10 +118,10 @@ You read: &quot; About the Ragnarok. &quot;
     <changed>YES</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0e60" />
+      <child nodeId="node-0x5658910" />
     </children>
   </item>
-  <item nodeId="node-0x9fd0e60">
+  <item nodeId="node-0x5658910">
     <command xml:space="preserve">read next page</command>
     <result xml:space="preserve">(in the old book)
 You read: &quot; About the Underworld. &quot;
@@ -110,10 +131,10 @@ You read: &quot; About the Underworld. &quot;
     <changed>YES</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0eb0" />
+      <child nodeId="node-0x5658980" />
     </children>
   </item>
-  <item nodeId="node-0x9fd0eb0">
+  <item nodeId="node-0x5658980">
     <command xml:space="preserve">read page 4</command>
     <result xml:space="preserve">(in the old book)
  
@@ -122,10 +143,10 @@ You read: &quot; About the Underworld. &quot;
     <changed>YES</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0f00" />
+      <child nodeId="node-0x56589f0" />
     </children>
   </item>
-  <item nodeId="node-0x9fd0f00">
+  <item nodeId="node-0x56589f0">
     <command xml:space="preserve">read page 3</command>
     <result xml:space="preserve">(in the old book)
 You read: &quot; About Midgard. &quot;
@@ -135,10 +156,10 @@ You read: &quot; About Midgard. &quot;
     <changed>YES</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0f50" />
+      <child nodeId="node-0x5658b20" />
     </children>
   </item>
-  <item nodeId="node-0x9fd0f50">
+  <item nodeId="node-0x5658b20">
     <command xml:space="preserve">read next page</command>
     <result xml:space="preserve">(in the old book)
  
@@ -147,7 +168,7 @@ You read: &quot; About Midgard. &quot;
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
   </item>
-  <item nodeId="node-0x9fd0fa0">
+  <item nodeId="node-0x5658810">
     <command xml:space="preserve">read page 3</command>
     <result xml:space="preserve">(in the old book)
 You read: &quot; About Midgard. &quot;
@@ -157,7 +178,7 @@ You read: &quot; About Midgard. &quot;
     <changed>NO</changed>
     <temporary score="4">YES</temporary>
   </item>
-  <item nodeId="node-0x9f9a970">
+  <item nodeId="node-0x5658b90">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -168,13 +189,13 @@ Underworld
     <changed>NO</changed>
     <temporary score="5">YES</temporary>
     <children>
-      <child nodeId="node-0x9fb0290" />
-      <child nodeId="node-0x9f89340" />
-      <child nodeId="node-0x9fd1100" />
-      <child nodeId="node-0x9fd10b0" />
+      <child nodeId="node-0x5658200" />
+      <child nodeId="node-0x5657c20" />
+      <child nodeId="node-0x5657af0" />
+      <child nodeId="node-0x5657aa0" />
     </children>
   </item>
-  <item nodeId="node-0x9fd10b0">
+  <item nodeId="node-0x5657aa0">
     <command xml:space="preserve">take gjallarhorn</command>
     <result xml:space="preserve"> 
 &gt;</result>
@@ -182,7 +203,7 @@ Underworld
     <changed>YES</changed>
     <temporary score="5">YES</temporary>
   </item>
-  <item nodeId="node-0x9fd1100">
+  <item nodeId="node-0x5657af0">
     <command xml:space="preserve">unlock gatw</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -191,10 +212,10 @@ Underworld
     <changed>YES</changed>
     <temporary score="45">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd1150" />
+      <child nodeId="node-0x5657b40" />
     </children>
   </item>
-  <item nodeId="node-0x9fd1150">
+  <item nodeId="node-0x5657b40">
     <command xml:space="preserve">unlock large gate</command>
     <result xml:space="preserve">What do you want to unlock the large gate with?
 
@@ -203,10 +224,10 @@ Underworld
     <changed>YES</changed>
     <temporary score="45">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd11a0" />
+      <child nodeId="node-0x5657bb0" />
     </children>
   </item>
-  <item nodeId="node-0x9fd11a0">
+  <item nodeId="node-0x5657bb0">
     <command xml:space="preserve">golden key</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -215,7 +236,7 @@ Underworld
     <changed>YES</changed>
     <temporary score="44">YES</temporary>
   </item>
-  <item nodeId="node-0x9f89340">
+  <item nodeId="node-0x5657c20">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -228,11 +249,11 @@ You can see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="64">YES</temporary>
     <children>
-      <child nodeId="node-0x9f89680" />
-      <child nodeId="node-0x9f893b0" />
+      <child nodeId="node-0x5657f60" />
+      <child nodeId="node-0x5658a60" />
     </children>
   </item>
-  <item nodeId="node-0x9f893b0">
+  <item nodeId="node-0x5658a60">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Midgard
@@ -243,10 +264,10 @@ Midgard
     <changed>NO</changed>
     <temporary score="64">YES</temporary>
     <children>
-      <child nodeId="node-0x9f89420" />
+      <child nodeId="node-0x5658ab0" />
     </children>
   </item>
-  <item nodeId="node-0x9f89420">
+  <item nodeId="node-0x5658ab0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -259,10 +280,10 @@ Forest Clearing
     <changed>NO</changed>
     <temporary score="64">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0ff0" />
+      <child nodeId="node-0x5657e10" />
     </children>
   </item>
-  <item nodeId="node-0x9fd0ff0">
+  <item nodeId="node-0x5657e10">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Midgard
@@ -273,10 +294,10 @@ Midgard
     <changed>NO</changed>
     <temporary score="64">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd1040" />
+      <child nodeId="node-0x5657e80" />
     </children>
   </item>
-  <item nodeId="node-0x9fd1040">
+  <item nodeId="node-0x5657e80">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Portal Room
@@ -289,10 +310,10 @@ You can see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="64">YES</temporary>
     <children>
-      <child nodeId="node-0x9f89610" />
+      <child nodeId="node-0x5657ef0" />
     </children>
   </item>
-  <item nodeId="node-0x9f89610">
+  <item nodeId="node-0x5657ef0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the large gate)
 
@@ -308,7 +329,7 @@ You can also see Asgard&apos;s Gate and a large gate here.
     <changed>YES</changed>
     <temporary score="63">YES</temporary>
   </item>
-  <item nodeId="node-0x9f89680">
+  <item nodeId="node-0x5657f60">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -317,10 +338,10 @@ You can also see Asgard&apos;s Gate and a large gate here.
     <changed>NO</changed>
     <temporary score="52">YES</temporary>
     <children>
-      <child nodeId="node-0x9f896f0" />
+      <child nodeId="node-0x5657fd0" />
     </children>
   </item>
-  <item nodeId="node-0x9f896f0">
+  <item nodeId="node-0x5657fd0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Midgard
@@ -331,11 +352,11 @@ Midgard
     <changed>NO</changed>
     <temporary score="52">YES</temporary>
     <children>
-      <child nodeId="node-0x9f897d0" />
-      <child nodeId="node-0x9f89760" />
+      <child nodeId="node-0x56580b0" />
+      <child nodeId="node-0x5658040" />
     </children>
   </item>
-  <item nodeId="node-0x9f89760">
+  <item nodeId="node-0x5658040">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Forest Clearing
@@ -348,7 +369,7 @@ Forest Clearing
     <changed>YES</changed>
     <temporary score="51">YES</temporary>
   </item>
-  <item nodeId="node-0x9f897d0">
+  <item nodeId="node-0x56580b0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Portal Room
@@ -361,10 +382,10 @@ You can see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="41">YES</temporary>
     <children>
-      <child nodeId="node-0x9f89840" />
+      <child nodeId="node-0x5658120" />
     </children>
   </item>
-  <item nodeId="node-0x9f89840">
+  <item nodeId="node-0x5658120">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">It seems to be locked.
 
@@ -373,10 +394,10 @@ You can see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="41">YES</temporary>
     <children>
-      <child nodeId="node-0x9f898b0" />
+      <child nodeId="node-0x5658190" />
     </children>
   </item>
-  <item nodeId="node-0x9f898b0">
+  <item nodeId="node-0x5658190">
     <command xml:space="preserve">x large gate</command>
     <result xml:space="preserve"> gsdhfj
 
@@ -385,7 +406,7 @@ You can see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="40">YES</temporary>
   </item>
-  <item nodeId="node-0x9fb0290">
+  <item nodeId="node-0x5658200">
     <command xml:space="preserve">take gjoll</command>
     <result xml:space="preserve"> 
 &gt;</result>
@@ -393,10 +414,10 @@ You can see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="5">YES</temporary>
     <children>
-      <child nodeId="node-0x9fb0300" />
+      <child nodeId="node-0x5657260" />
     </children>
   </item>
-  <item nodeId="node-0x9fb0300">
+  <item nodeId="node-0x5657260">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -411,10 +432,10 @@ You can also see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="5">YES</temporary>
     <children>
-      <child nodeId="node-0x9fb0370" />
+      <child nodeId="node-0x5657c90" />
     </children>
   </item>
-  <item nodeId="node-0x9fb0370">
+  <item nodeId="node-0x5657c90">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -423,7 +444,7 @@ You can also see a large gate and Heimdallr here.
     <changed>YES</changed>
     <temporary score="4">YES</temporary>
   </item>
-  <item nodeId="node-0x9fb03e0">
+  <item nodeId="node-0x5657d00">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">kgkj 
 &gt;</result>
@@ -431,11 +452,11 @@ You can also see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x9fd0390" />
-      <child nodeId="node-0x9fb0450" />
+      <child nodeId="node-0x5657660" />
+      <child nodeId="node-0x5657d70" />
     </children>
   </item>
-  <item nodeId="node-0x9fb0450">
+  <item nodeId="node-0x5657d70">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -448,10 +469,10 @@ You can see Gjallarhorn here.
     <changed>NO</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x9f89490" />
+      <child nodeId="node-0x5657510" />
     </children>
   </item>
-  <item nodeId="node-0x9f89490">
+  <item nodeId="node-0x5657510">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -464,10 +485,10 @@ You can see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x9f894e0" />
+      <child nodeId="node-0x5657580" />
     </children>
   </item>
-  <item nodeId="node-0x9f894e0">
+  <item nodeId="node-0x5657580">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Midgard
@@ -478,10 +499,10 @@ Midgard
     <changed>YES</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x9f89550" />
+      <child nodeId="node-0x56575f0" />
     </children>
   </item>
-  <item nodeId="node-0x9f89550">
+  <item nodeId="node-0x56575f0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve"> 
 &gt;</result>
@@ -489,11 +510,32 @@ Midgard
     <changed>YES</changed>
     <temporary score="88">YES</temporary>
   </item>
-  <item nodeId="node-0x9fd0390">
+  <item nodeId="node-0x5657660">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
+  </item>
+  <item nodeId="node-0x56576d0">
+    <command xml:space="preserve">take statue</command>
+    <result xml:space="preserve">That is way too large to carry.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="11">YES</temporary>
+    <children>
+      <child nodeId="node-0x5657740" />
+    </children>
+  </item>
+  <item nodeId="node-0x5657740">
+    <command xml:space="preserve">break statue</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="10">YES</temporary>
   </item>
 </Skein>

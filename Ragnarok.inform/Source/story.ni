@@ -6,11 +6,22 @@ When play begins: say "  "
 
 The Portal Room is a room. " "
 
-The statue is scenery in the Portal Room. " "
+The statue is a thing in the Portal Room. The description is "A large stone statue of a tall bearded man holding a staff. It looks like part of the statue is starting to fall off. You can just make out hairline cracks near the hand holding the staff."
 
-The pole is in the Portal Room. " "
+Understand "stone statue" as statue.
+
+The pole is a thing. "A long stone pole. It looks much heavier than it actually is. "
 
 Understand "staff" as pole.
+
+Understand "break [something]" as breaking. Breaking is an action applying to one thing.
+
+[Instead of breaking the statue: 
+    		move the pole to player; 
+    		say "You reach up and break off the staff that the statue was 		holding."]
+	
+Instead of taking the statue:
+	say "That is way too large to carry."
 
 The bookshelf is scenery in the Portal Room. " "
 
@@ -137,10 +148,6 @@ The map is a thing in Valhalla. "A map of Midgard and its surrounding forests, t
 
 Understand "centerpiece" as map.
 
-Asgard is a room. " "
-
-Asgard's Gate is east of Asgard and west of Valhalla. Asgard's Gate is a door. Asgard's Gate is locked and lockable. The golden key unlocks Asgard's Gate. The description of Asgard's Gate is " "
-
 The Underworld is a room. It is south of the Portal Room. " "
 
 Hel's Gate is scenery in the Underworld. 
@@ -170,6 +177,8 @@ Instead of combining pole with metal barb:
 
 Gjoll is scenery in the Underworld. " "
 
+Understand "river" as Gjoll.
+
 Gjallarhorn is a thing in Gjoll. " "
 
 Understand "horn" as Gjallarhorn.
@@ -183,6 +192,28 @@ Before taking Gjallarhorn:
 		stop the action.
 
 Midgard is a room. It is west of the Portal Room. " "
+
+The bucket is a container in Midgard. "A medium sized plastic bucket." 
+
+ Filling it with is an action applying to two things.
+Understand "fill [something] with [something]" or "pour [something] into/in [something]" or "put [something] in [something]" as filling it with.
+
+Check filling it with:
+	if the noun is not the bucket, say "Fill? What are you filling?";
+	if the noun is bucket and the second noun is Gjoll, say "The water looks murky and foreboding. You should fill the bucket elsewhere";
+	if the noun is bucket and the second noun is fountain water:
+		say "You fill the bucket with water from the fountain.";
+		insert fountain water into the bucket.
+	
+Asgard is a room. " "
+
+Asgard's Gate is east of Asgard and west of Valhalla. Asgard's Gate is a door. Asgard's Gate is locked and lockable. The golden key unlocks Asgard's Gate. The description of Asgard's Gate is " "
+
+The fountain is scenery in Asgard. "A huge marble fountain depicting a man trying to catch a fish with his bare hands. Water shoots out of the fish's mouth into the large circular area surrounding the fountain."
+
+Fountain water is scenery in Asgard. "Shimmering clear water from the fountain"
+
+Understand "water" as fountain water.	
 
 Before going to Forest Clearing:
 	if player is not carrying map:
