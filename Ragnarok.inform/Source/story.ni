@@ -125,14 +125,28 @@ To read page (N - 6):
 		choose row with a page of N in the Table of Book Contents;
 		say "You read: '[content entry]'[paragraph break]"
 		
-Mood is a kind of value. The moods are unhappy, pleased, and suspicious. People have mood. The mood of Heimdallr is unhappy.
+Mood is a kind of value. The moods are unhappy, pleased, and suspicious. People have mood. The mood of Heimdallr is unhappy. The mood of Mistletoe is unhappy.
 
 Heimdallr is a man in the Portal Room. the description of Heimdallr is "A large, rather intimidating man. He looks [the mood of Heimdallr]. When asked, he says that he is missing Gjallarhorn, the horn from the river Gjoll."
 
 Instead of attacking Heimdallr:
 	end the game saying "It wasn't a very smart choice to attack a god. You find yourself unable to continue your adventure."
 
-Understand "man" as Heimdallr.
+Understand "man" or "person" as Heimdallr.
+
+Talking to is an action applying to one visible thing. Understand "talk to [someone]" or "converse with [someone]" as talking to.
+
+Check talking to: say "[The noun] doesn't reply."
+
+Instead of talking to Heimdallr:
+	say "Heimdallr says he can't find his horn, Gjallarhorn. He seems pretty distraught about this. Is there anything else you would like to ask him?"
+
+Understand "the large gate" or "gate" or "opening the large gate" or "opening the gate" as "[gate]". Instead of asking Heimdallr about "[gate]", say "He doesn't seem to want to open the gate."
+
+Understand "where is Gjallarhorn/Horn" or "where is horn/gjallarhorn" or "gjallarhorn/horn" or "horn/gjallarhorn location" as "[horn]". 
+Instead of asking Heimdallr about "[horn]", say "Heimdallr says he does not remember, but it should be somewhere nearby."
+	
+Instead of telling Heimdallr about something, try asking Heimdallr about it.
 
 Instead of giving Gjallarhorn to Heimdallr:
 	now Heimdallr is pleased;
@@ -148,8 +162,7 @@ Before going to Valhalla:
 		say "It seems Heimdallr doesn't want you going in there.";
 		stop the action;
 	otherwise:
-		say " ";
-		move player to Valhalla
+		move player to Valhalla.
 		
 The map is a thing in Valhalla. The description is "A map of Midgard and its surrounding forests, there seems to be a clearning pointed out just south of Midgard."
 
@@ -164,19 +177,21 @@ The chairs are scenery in Valhalla. "Wooden chairs to match the table."
 
 Understand "chair" as chairs.
 
-The Underworld is a room. It is south of the Portal Room. "A room that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. "
+The Underworld is a room. It is south of the Portal Room. "A place that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. You can see the river Gjoll here. [paragraph break] To the north is the Portal Room."
 
-Hel's Gate is scenery in the Underworld. 
+Hel's Gate is a thing in the Underworld. 
+
+Instead of taking Hel's Gate, say "I don't think you can carry that."
 
 Instead of examining Hel's Gate:
 	say "While looking at Hel's Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...";
 	move metal barb to player.
 
-The metal barb is a thing. The description of the metal barb is " "
+The metal barb is a thing. The description of the metal barb is "A small metal barb. It might be more useful if used with another item."
 
 Understand "barb" as metal barb.
 
-The fishing pole is a thing. The description of the fishing pole is " "
+The fishing pole is a thing. The description of the fishing pole is "A long pole, typically used for fishing, but there are other things in the river that you can catch."
 
 Combining it with is an action applying to two things.
 Understand "combine [something] with [something]" as combining it with.
@@ -193,9 +208,9 @@ Instead of combining pole with metal barb:
 	remove pole from play; 
 	move the fishing pole to player.
 
-Gjoll is scenery in the Underworld. " "
+Gjoll is scenery in the Underworld. The description is "A flowing river that looks more intimidating than refreshing."
 
-Understand "river" or "river water" as Gjoll.
+Understand "river" or "river water" or "river Gjoll" as Gjoll.
 
 Gjallarhorn is a thing in Gjoll. "The famous horn of Heimdallr, I'm sure he wants it back. It looks large and heavy, but doesn't seem to weigh much. There is a strange script running down the length of the handle. Too bad you don't understand old Norse."
 
@@ -261,6 +276,15 @@ Before going to Forest Clearing:
 		move player to Forest Clearing.
 
 The Forest Clearing is a room. It is south of Midgard. "A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. [paragraph break] To the north is Midgard."
+
+Mistletoe is a man in the Forest Clearing. "a small green plant near the edge of the clearning." The description of Mistletoe is "A small green plant. It looks pretty harmless in its current state."
+
+Understand "plant" as Mistletoe.
+
+Instead of talking to Mistletoe:
+	say "The mistletoe looks [mood] "
+	
+Include Quip-Based Conversation by Michael Martin. 
 
 The trees are scenery in the Forest Clearing. "Large pine trees that seem to stretch on forever."
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x310520" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x7ccae90" />
+  <activeNode nodeId="node-0x5725d70" />
   <item nodeId="node-0x310520">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -12,7 +12,7 @@ You wake up in a strange room, not entirely knowing why you are here, or even wh
 
 Ragnarok
 An Interactive Fiction by Marissa Takebayashi
-Release 1 / Serial number 140303 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140305 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -25,7 +25,7 @@ You can also see a large gate, a statue and Heimdallr here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">NO</temporary>
+    <temporary score="309">NO</temporary>
     <children>
       <child nodeId="node-0x3100f0" />
       <child nodeId="node-0x30e480" />
@@ -401,7 +401,7 @@ In the bookshelf is an old book.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">YES</temporary>
+    <temporary score="309">YES</temporary>
     <children>
       <child nodeId="node-0x30f300" />
       <child nodeId="node-0x30f370" />
@@ -420,12 +420,16 @@ In the bookshelf is an old book.
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
-A room that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. 
+A place that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. You can see the river Gjoll here. 
+
+ To the north is the Portal Room.
+
+You can see Hel&apos;s Gate here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">YES</temporary>
+    <temporary score="309">YES</temporary>
     <children>
       <child nodeId="node-0x30f8a0" />
       <child nodeId="node-0x2218e0" />
@@ -438,8 +442,9 @@ A room that is surprisingly well lit for a place that seems so dark. A chilly wi
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">YES</temporary>
+    <temporary score="309">YES</temporary>
     <children>
+      <child nodeId="node-0x8f46b80" />
       <child nodeId="node-0x60ac9b0" />
     </children>
   </item>
@@ -450,7 +455,7 @@ A room that is surprisingly well lit for a place that seems so dark. A chilly wi
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">YES</temporary>
+    <temporary score="301">YES</temporary>
     <children>
       <child nodeId="node-0x570f940" />
     </children>
@@ -462,7 +467,7 @@ A room that is surprisingly well lit for a place that seems so dark. A chilly wi
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">YES</temporary>
+    <temporary score="301">YES</temporary>
     <children>
       <child nodeId="node-0x57138b0" />
     </children>
@@ -475,8 +480,8 @@ You already have that.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="43">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
     <children>
       <child nodeId="node-0x7ce2ca0" />
     </children>
@@ -490,7 +495,7 @@ You already have that.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="43">YES</temporary>
+    <temporary score="301">YES</temporary>
     <children>
       <child nodeId="node-0x5717ba0" />
     </children>
@@ -508,8 +513,8 @@ You can also see a large gate, a statue and Heimdallr here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="43">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
     <children>
       <child nodeId="node-0x7cb65e0" />
     </children>
@@ -520,8 +525,8 @@ You can also see a large gate, a statue and Heimdallr here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="43">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
     <children>
       <child nodeId="node-0x7ccae90" />
     </children>
@@ -539,8 +544,265 @@ You&apos;ll have to get out of Valhalla first.
 
 &gt;</result>
     <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x57bb280" />
+    </children>
+  </item>
+  <item nodeId="node-0x57bb280">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x5713790" />
+    </children>
+  </item>
+  <item nodeId="node-0x5713790">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the large gate)
+
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x8f37810" />
+    </children>
+  </item>
+  <item nodeId="node-0x8f37810">
+    <command xml:space="preserve">talk to heimdallr</command>
+    <result xml:space="preserve">Heimdallr says he can&apos;t find his horn, Gjallarhorn. He seems pretty distraught about this. Is there anything else you would like to ask him?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x60b2b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x60b2b10">
+    <command xml:space="preserve">ask him to open the gate</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x57af6e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x57af6e0">
+    <command xml:space="preserve">ask to open the gate</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x57dacd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x57dacd0">
+    <command xml:space="preserve">ask about opening the gate</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x8f2e880" />
+    </children>
+  </item>
+  <item nodeId="node-0x8f2e880">
+    <command xml:space="preserve">ask heimdallr about opening the gate</command>
+    <result xml:space="preserve">He doesn&apos;t seem to want to open the gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x57eb3c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x57eb3c0">
+    <command xml:space="preserve">ask heimdallr about gate</command>
+    <result xml:space="preserve">He doesn&apos;t seem to want to open the gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x8f3ecd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8f3ecd0">
+    <command xml:space="preserve">ask heimdallr about horn</command>
+    <result xml:space="preserve">Heimdallr says he does not remember, but it should be somewhere nearby.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x221c20" />
+    </children>
+  </item>
+  <item nodeId="node-0x221c20">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a fishing pole
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x7c44380" />
+    </children>
+  </item>
+  <item nodeId="node-0x7c44380">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Underworld
+A place that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. You can see the river Gjoll here. 
+
+ To the north is the Portal Room.
+
+You can see Hel&apos;s Gate here.
+
+&gt;</result>
+    <played>YES</played>
     <changed>YES</changed>
-    <temporary score="42">YES</temporary>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x57d0d50" />
+    </children>
+  </item>
+  <item nodeId="node-0x57d0d50">
+    <command xml:space="preserve">take horn</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x2f9dc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2f9dc0">
+    <command xml:space="preserve">take gjallarhorn</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="301">YES</temporary>
+    <children>
+      <child nodeId="node-0x7c81150" />
+    </children>
+  </item>
+  <item nodeId="node-0x7c81150">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a fishing pole
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="300">YES</temporary>
+  </item>
+  <item nodeId="node-0x8f46b80">
+    <command xml:space="preserve">combine pole with barb</command>
+    <result xml:space="preserve">You combine the metal barb and the pole to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="309">YES</temporary>
+    <children>
+      <child nodeId="node-0x8f38670" />
+    </children>
+  </item>
+  <item nodeId="node-0x8f38670">
+    <command xml:space="preserve">take horn</command>
+    <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
+
+You already have that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="309">YES</temporary>
+    <children>
+      <child nodeId="node-0x9a99e00" />
+    </children>
+  </item>
+  <item nodeId="node-0x9a99e00">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="309">YES</temporary>
+    <children>
+      <child nodeId="node-0x57b9130" />
+    </children>
+  </item>
+  <item nodeId="node-0x57b9130">
+    <command xml:space="preserve">give heimdallr horn</command>
+    <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="309">YES</temporary>
+    <children>
+      <child nodeId="node-0x5725d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x5725d70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate, a map and a centerpiece here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
   </item>
   <item nodeId="node-0x30f8a0">
     <command xml:space="preserve">take horn</command>
