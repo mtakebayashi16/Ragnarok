@@ -2,9 +2,9 @@
 
 Use no scoring.
 
-When play begins: say " "
+When play begins: say "You wake up in a strange room, not entirely knowing why you are here, or even where you are. There isn't much in the room to suggest why you are here, maybe you can find something in this room to help you remember."
 
-The Portal Room is a room. "A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls."
+The Portal Room is a room. "A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. [paragraph break] To the south is the Underworld, Midgard it to the west, and there is a large gate to the north."
 
 The statue is a thing in the Portal Room. The description is "A large stone statue of a tall bearded man holding a staff. It looks like part of the statue is starting to fall off. You can just make out hairline cracks near the hand holding the staff."
 
@@ -14,11 +14,11 @@ The pole is a thing. "A long stone pole. It looks much heavier than it actually 
 
 Understand "staff" as pole.
 
-Understand "break [something]" as breaking. Breaking is an action applying to one thing.
+Instead of attacking the statue: 
+    	move pole to player; 
+    	say "You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable."
 
-[Instead of breaking the statue: 
-    		move pole to player; 
-    		say "You reach up and break off the staff that the statue was holding."]
+Instead of taking the pole, say "you are going to need to use more force to do that."
 	
 Instead of taking the statue:
 	say "That is way too large to carry."
@@ -27,6 +27,9 @@ The bookshelf is a thing in the Portal Room. The description is "A large wooden 
 
 Instead of taking the bookshelf:
 	say "I don't think you can carry that."
+
+Rule for writing a paragraph about the bookshelf:
+	say " "
 
 The old book is in the bookshelf. The old book has a number called the last page read. The old book has a number called the length. The length of the old book is 6."An ancient book that seems to be about the various myths and places in these worlds."
 
@@ -84,11 +87,11 @@ Check reading:
 Table of Book Contents
 page	content
 1	"[bold type] About the Ragnarok. [roman type] In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don't want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don't fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr."
-2	"[bold type] About the Underworld. [roman type] The Underworld is Hel's domain. She doesn't appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr's horn, Gjallarhorn, comes from this river. "
-3	"[bold type] About Midgard. [roman type]"
-4	"[bold type] About the Forest. [roman type]"
-5	"[bold type] About Valhalla. [roman type]"
-6	"[bold type] About Asgard. [roman type]"
+2	"[bold type] About the Underworld. [roman type] The Underworld is Hel's domain. She doesn't appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr's horn, Gjallarhorn, comes from this river. However, the river Gjoll is said to feel like thousands of knives, so I wouldn't be to hasty to go swimming. Maybe if you had some sort of pole..."
+3	"[bold type] About Midgard. [roman type] For the time being, the Gods have restricted the accessible area of your homeworld to a janitor's closet and a small forest just outside. They say it is incentive for you to work faster. Not everything here is trash, though, and you may even find something to help you on your journey."
+4	"[bold type] About Valhalla. [roman type] Valhalla, where fallen heros come to celebrate. Seeing as you aren't dead yet, and haven't done anything particularly heroic, Valhalla doesn't hold that much significance to you. Although I would look around closely, you never know what you might find."
+5	"[bold type] About the Forest. [roman type] The forest, home to the infamous mistletoe. Although mistletoe may seem unimportant, it plays a large role in the upcoming events. To stop the Ragnarok, you must secure a vow from it, saying that it promises to not harm Baldr. However, this is easier said than done, since the mistletoe doesn't seem up to bargaining in its current mood."
+6	"[bold type] About Asgard. [roman type] The home of the Gods. Or the ones that you care about, anyway. Everything here is extravagant and well-polished. Although you are not allowed into the actual city, the fountain near the entrance shows the lavishness of the Gods quite well. Pure, fine, Asgardian water flows from this fountain. It makes you thirsty just looking at it."
 	
 To read page (N - a number): 
 	now the last page read of the old book is N;
@@ -99,16 +102,16 @@ To read page (N - a number):
         		say "Page [N] appears to be blank."
 
 To read page (N - 4):
-	if player is not carrying map:
-		say "Part of the book seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.";
+	if Heimdallr is not carrying Gjallarhorn:
+		say "The section on Valhalla seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.";
 		stop the action;
 	otherwise:
 		choose row with a page of N in the Table of Book Contents;
 		say "You read: '[content entry]'[paragraph break]"
 
 To read page (N - 5):
-	if Heimdallr is not carrying Gjallarhorn:
-		say "Part of the book seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.";
+	if player is not carrying map:
+		say "The section on the forest seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.";
 		stop the action;
 	otherwise:
 		choose row with a page of N in the Table of Book Contents;
@@ -116,7 +119,7 @@ To read page (N - 5):
 		
 To read page (N - 6):
 	if player is not carrying the golden key:
-		say "Part of the book seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.";
+		say "The section on Asgard seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.";
 		stop the action;
 	otherwise:
 		choose row with a page of N in the Table of Book Contents;
@@ -136,15 +139,16 @@ Instead of giving Gjallarhorn to Heimdallr:
 	move Gjallarhorn to Heimdallr;
 	say "Heimdallr looks [the mood of Heimdallr]. He decides to open the large gate for you."
 
-The large gate is south of Valhalla and north of the Portal Room. The large gate is a door. The description of the large gate is " "
+The large gate is south of Valhalla and north of the Portal Room. The large gate is a door. The description of the large gate is "A large gate that must be several stories high. It doesn't look like you are going to be able to open it without Heimdallr's consent."
 
-Valhalla is a room." "
+Valhalla is a room."A good-sized room that looks like it has seen its fair share of parties. It isn't necessarily dirty, but everything is worn. [paragraph break] To the west is Asgard's Gate, to the south is the Portal Room."
 
 Before going to Valhalla:
 	if Heimdallr is not carrying Gjallarhorn:
 		say "It seems Heimdallr doesn't want you going in there.";
 		stop the action;
 	otherwise:
+		say " ";
 		move player to Valhalla
 		
 The map is a thing in Valhalla. The description is "A map of Midgard and its surrounding forests, there seems to be a clearning pointed out just south of Midgard."
@@ -160,7 +164,7 @@ The chairs are scenery in Valhalla. "Wooden chairs to match the table."
 
 Understand "chair" as chairs.
 
-The Underworld is a room. It is south of the Portal Room. " "
+The Underworld is a room. It is south of the Portal Room. "A room that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. "
 
 Hel's Gate is scenery in the Underworld. 
 
@@ -201,7 +205,10 @@ Before taking Gjallarhorn:
 	if player is carrying the fishing pole:
 		say "You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.";
 		move Gjallarhorn to player;
-	otherwise:
+	if player is carrying the pole:
+		say "You stick your pole in the water, but you end up pushing Gjallarhorn around. Hmm, maybe if you had something sharp to combine with the pole.";
+		stop the action;
+	if player is not carrying the fishing pole:
 		say "Gjallarhorn is at the bottom of the river, your arms are too short to reach it from here. Maybe if you had something to fish it out of the river...";
 		stop the action.
 
@@ -221,7 +228,7 @@ Instead of taking the mop:
 
 The bucket is a container in Midgard. The description is "A medium sized plastic bucket." 
 
- Filling it with is an action applying to two things.
+Filling it with is an action applying to two things.
 Understand "fill [something] with [something]" or "pour [something] into/in [something]" or "put [something] in [something]" as filling it with.
 
 Check filling it with:
@@ -241,6 +248,8 @@ The fountain is scenery in Asgard. "A huge marble fountain depicting a man tryin
 
 Fountain water is scenery in Asgard. "Shimmering clear water from the fountain"
 
+Instead of drinking fountain water, say "Although it is tempting, you have more important matters to get to."
+
 Understand "water" as fountain water.	
 
 Before going to Forest Clearing:
@@ -251,9 +260,9 @@ Before going to Forest Clearing:
 		say "You successfully navigate through the winding path, finding the forest clearing pointed out on the map.";
 		move player to Forest Clearing.
 
-The Forest Clearing is a room. It is south of Midgard. "A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured."
+The Forest Clearing is a room. It is south of Midgard. "A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. [paragraph break] To the north is Midgard."
 
-The trees are scenery in the Forest Clearing. "Large pine trees."
+The trees are scenery in the Forest Clearing. "Large pine trees that seem to stretch on forever."
 
 The golden key is a thing in the Forest Clearing. "A large ornate golden key. It looks like it would fit into a large ornate golden gate."
 
