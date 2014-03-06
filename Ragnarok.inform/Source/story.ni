@@ -8,17 +8,15 @@ The Portal Room is a room. "A mostly empty room. The walls are all a bland grey 
 
 The statue is a thing in the Portal Room. The description is "A large stone statue of a tall bearded man holding a staff. It looks like part of the statue is starting to fall off. You can just make out hairline cracks near the hand holding the staff."
 
-Understand "stone statue" as statue.
+Understand "stone statue" or "hand" as statue.
 
-The pole is a thing. "A long stone pole. It looks much heavier than it actually is."
-
-Understand "staff" as pole.
+The staff is a thing. "A long stone pole. It looks much heavier than it actually is."
 
 Instead of attacking the statue: 
-    	move pole to player; 
+    	move staff to player; 
     	say "You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable."
 
-Instead of taking the pole, say "you are going to need to use more force to do that."
+Instead of taking the staff, say "you are going to need to use more force to do that."
 	
 Instead of taking the statue:
 	say "That is way too large to carry."
@@ -125,6 +123,8 @@ To read page (N - 6):
 		choose row with a page of N in the Table of Book Contents;
 		say "You read: '[content entry]'[paragraph break]"
 		
+Understand "read book" as a mistake ("You should have a page number before the read command.").
+
 Mood is a kind of value. The moods are unhappy, pleased, and suspicious. People have mood. The mood of Heimdallr is unhappy. The mood of Mistletoe is unhappy.
 
 Heimdallr is a man in the Portal Room. the description of Heimdallr is "A large, rather intimidating man. He looks [the mood of Heimdallr]. When asked, he says that he is missing Gjallarhorn, the horn from the river Gjoll."
@@ -134,12 +134,17 @@ Instead of attacking Heimdallr:
 
 Understand "man" or "person" as Heimdallr.
 
+Understand "ask [someone]" or "ask" as a mistake ("Ask who about what?").
+
 Talking to is an action applying to one visible thing. Understand "talk to [someone]" or "converse with [someone]" as talking to.
 
 Check talking to: say "[The noun] doesn't reply."
 
 Instead of talking to Heimdallr:
-	say "Heimdallr says he can't find his horn, Gjallarhorn. He seems pretty distraught about this. Is there anything else you would like to ask him?"
+	if Heimdallr is carrying Gjallarhorn:
+		say "Heimdallr thanks you for finding Gjallarhorn and invites you to go into Valhalla.";
+	if Heimdallr is not carrying Gjallarhorn:
+		say "Heimdallr says he can't find his horn, Gjallarhorn. He seems pretty distraught about this. Is there anything else you would like to ask him about?"
 
 Understand "the large gate" or "gate" or "opening the large gate" or "opening the gate" as "[gate]". Instead of asking Heimdallr about "[gate]", say "He doesn't seem to want to open the gate."
 
@@ -164,12 +169,14 @@ Before going to Valhalla:
 	otherwise:
 		move player to Valhalla.
 		
-The map is a thing in Valhalla. The description is "A map of Midgard and its surrounding forests, there seems to be a clearning pointed out just south of Midgard."
+The map is a thing in Valhalla. The description is "A map of Midgard and its surrounding forests, there seems to be a clearing pointed out just south of Midgard."
 
 The centerpiece is a thing in Valhalla. The description is "An intricate centerpiece showing what appears to be several of the worlds you have visited. Upon further inspection you can see there is a map attached."
 
+Understand "center piece" as centerpiece.
+
 Instead of taking the centerpiece:
-	say "You might want to examine it first."
+	say "A nice floral centerpiece plated in gold. It seems very expensive, probably worth more than you. I wouldn't take it if I were you. Have you tried taking a closer look?"
 	
 The table is scenery in Valhalla. "A large oaken table. Judging by its worn state, there have been many parties and celebrations here."
 
@@ -193,19 +200,21 @@ Understand "barb" as metal barb.
 
 The fishing pole is a thing. The description of the fishing pole is "A long pole, typically used for fishing, but there are other things in the river that you can catch."
 
+Understand "pole" or "fishingpole" as fishing pole
+
 Combining it with is an action applying to two things.
 Understand "combine [something] with [something]" as combining it with.
 
-Instead of combining metal barb with pole:
-	say "You combine the metal barb and the pole to make a fishing pole. Although you probably won't use it to catch fish. Don't worry, there are other things in the river you can catch besides fish.";
+Instead of combining metal barb with staff:
+	say "You combine the metal barb and the staff to make a fishing pole. Although you probably won't use it to catch fish. Don't worry, there are other things in the river you can catch besides fish.";
 	remove metal barb from play;
-	remove pole from play;
+	remove staff from play;
 	move the fishing pole to player.
 
-Instead of combining pole with metal barb: 
-	say "You combine the metal barb and the pole to make a fishing pole. Although you probably won't use it to catch fish. Don't worry, there are other things in the river you can catch besides fish."; 
+Instead of combining staff with metal barb: 
+	say "You combine the metal barb and the staff to make a fishing pole. Although you probably won't use it to catch fish. Don't worry, there are other things in the river you can catch besides fish."; 
 	remove metal barb from play; 
-	remove pole from play; 
+	remove staff from play; 
 	move the fishing pole to player.
 
 Gjoll is scenery in the Underworld. The description is "A flowing river that looks more intimidating than refreshing."
@@ -216,23 +225,50 @@ Gjallarhorn is a thing in Gjoll. "The famous horn of Heimdallr, I'm sure he want
 
 Understand "horn" as Gjallarhorn.
 
+Blowing into is an action applying to one visible thing. Understand "blow into [something]" or "blow [something]" as blowing into.
+
+Instead of blowing into Gjallarhorn:
+	say "You take a deep breath and blowing into Gjallarhorn. Pppbbttt. You make a noise similar to a loud fart. Maybe you should leave this to Heimdallr as he is no doubt better at this than you."
+
 Before taking Gjallarhorn:
 	if player is carrying the fishing pole:
 		say "You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.";
 		move Gjallarhorn to player;
-	if player is carrying the pole:
+	if player is carrying the staff:
 		say "You stick your pole in the water, but you end up pushing Gjallarhorn around. Hmm, maybe if you had something sharp to combine with the pole.";
 		stop the action;
 	if player is not carrying the fishing pole:
 		say "Gjallarhorn is at the bottom of the river, your arms are too short to reach it from here. Maybe if you had something to fish it out of the river...";
 		stop the action.
+		
+Using is an action applying to one visible thing. Understand "use [something]" as using.
 
-Midgard is a room. It is west of the Portal Room. " "
+Before using:
+	if the noun is not the fishing pole:
+		say "Try using another command for that.";
+		 stop the action;
+	if player is not in Underworld:
+		say "You can't see anything you would want to use the fishing pole on.";
+		stop the action.
+
+Instead of using fishing pole:
+	if player is not carrying the fishing pole:
+		say "Gjallarhorn is at the bottom of the river, your arms are too short to reach it from here. Maybe if you had something to fish it out of the river...";
+		stop the action;
+	if player is carrying the fishing pole:
+		say "You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.";
+		move Gjallarhorn to player.
+
+Midgard is a room. It is west of the Portal Room. "You find yourself in a Midgardian janitor's closet. Which is to say, a regular janitor's closet. There are some trash bags and a mop lying next to the door you just came in. [paragraph break] To the south is a winding path and to the east is the Portal Room."
 
 The trash is scenery in Midgard. "Large garbage bags filled with who-knows-what. You can smell it from several feet away."
 
+Understand "trash bag" or "trash bags" or "bags" as trash.
+
 Instead of taking the trash:
 	say "I wouldn't want to touch that unless you want to smell like garbage for the rest of the week."
+	
+Instead of smelling the trash, say "You proced to stick your face into the trash bag trying to identify the smell, but only succeed in gagging horribly."
 
 The mop is scenery in Midgard. "A blue and white dust mop."
 
@@ -253,13 +289,15 @@ Check filling it with:
 		say "You fill the bucket with water from the fountain.";
 		move fountain water to the bucket.
 	
-Asgard is a room. " "
+Asgard is a room. "A grand place that is the city of the Gods. Unfortunately you aren't allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. [paragraph break] To the west is Valhalla. "
 
 Asgard's Gate is east of Asgard and west of Valhalla. Asgard's Gate is a door. Asgard's Gate is locked and lockable. The golden key unlocks Asgard's Gate. The description of Asgard's Gate is "A large ornate golden gate. It is decorated almost to the point of being ridiculously cheesy. You almost expect to hear a choir singing when you look at it."
 
-Understand "golden gate" or "gold gate" as Asgard's Gate.
+Understand "golden gate" or "gold gate" or "Asgards Gate" as Asgard's Gate.
 
 The fountain is scenery in Asgard. "A huge marble fountain depicting a man trying to catch a fish with his bare hands. Water shoots out of the fish's mouth into the large circular area surrounding the fountain."
+
+Understand "large fountain" or "marble fountain" or "large marble fountain" as fountain.
 
 Fountain water is scenery in Asgard. "Shimmering clear water from the fountain"
 
@@ -277,15 +315,13 @@ Before going to Forest Clearing:
 
 The Forest Clearing is a room. It is south of Midgard. "A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. [paragraph break] To the north is Midgard."
 
-Mistletoe is a man in the Forest Clearing. "a small green plant near the edge of the clearning." The description of Mistletoe is "A small green plant. It looks pretty harmless in its current state."
+Mistletoe is a person in the Forest Clearing. The description of Mistletoe is "A small green plant. It looks pretty harmless in its current state."
 
 Understand "plant" as Mistletoe.
 
 Instead of talking to Mistletoe:
-	say "The mistletoe looks [mood] "
+	say "The mistletoe looks [the mood of Mistletoe]";
 	
-Include Quip-Based Conversation by Michael Martin. 
-
 The trees are scenery in the Forest Clearing. "Large pine trees that seem to stretch on forever."
 
 The golden key is a thing in the Forest Clearing. "A large ornate golden key. It looks like it would fit into a large ornate golden gate."
