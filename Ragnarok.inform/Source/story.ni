@@ -2,6 +2,8 @@
 
 Use no scoring.
 
+Instead of examining player, say "You are a human of average height and weight. You are a generally average person, not having done any astounding feats of bravery, or seen anything particularly extrodinary. Maybe your wish for adventure will soon be fufilled."
+
 When play begins: say "You wake up in a strange room, not entirely knowing why you are here, or even where you are. There isn't much in the room to suggest why you are here, maybe you can find something in this room to help you remember."
 
 The Portal Room is a room. "A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. [paragraph break] To the south is the Underworld, Midgard it to the west, and there is a large gate to the north."
@@ -10,7 +12,11 @@ The statue is a thing in the Portal Room. The description is "A large stone stat
 
 Understand "stone statue" or "hand" as statue.
 
-The staff is a thing. "A long stone pole. It looks much heavier than it actually is."
+The staff is in the Portal Room. "A long stone pole. It looks much heavier than it actually is."
+
+Instead of examining staff:
+	if player is not carrying staff, say "A long stone staff that the statue is holding.";
+	if player is carrying staff, say "A long stone pole. It looks much heavier than it actually is."
 
 Instead of attacking the statue: 
     	move staff to player; 
@@ -180,9 +186,11 @@ Rule for printing room description details of a closed container: stop
 
 The centerpiece is a container in Valhalla. It is closed and openable. The description is "An intricate centerpiece showing what appears to be several of the worlds you have visited suspended on a the branches of a tree. Upon further inspection you can see there is a small opening"
 
-Small opening is scenery. The description of the small opening is "A small opening in the centerpiece, it appears to be closed."
+Small opening is scenery in Valhalla. The description of the small opening is "A small opening in the centerpiece, it appears to be closed."
 
 Understand "opening" as small opening.
+
+Instead of entering
 
 Understand "center piece" as the centerpiece.
 
@@ -245,6 +253,7 @@ Before taking Gjallarhorn:
 	if player is carrying the fishing pole:
 		say "You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.";
 		move Gjallarhorn to player;
+		stop the action;
 	if player is carrying the staff:
 		say "You stick your pole in the water, but you end up pushing Gjallarhorn around. Hmm, maybe if you had something sharp to combine with the pole.";
 		stop the action;
@@ -295,10 +304,14 @@ Understand "fill [something] with [something]" or "pour [something] into/in [som
 
 Check filling it with:
 	if the noun is not the bucket, say "Fill? What are you filling?";
-	if the noun is bucket and the second noun is Gjoll, say "The water looks murky and foreboding. You should fill the bucket elsewhere";
+	if the noun is the bucket and the second noun is Gjoll, say "The water looks murky and generally unpleasent. You decide to leave the river Gjoll right where it is.";
 	if the noun is bucket and the second noun is fountain water:
 		say "You fill the bucket with water from the fountain.";
 		move fountain water to the bucket.
+		
+[Instead of putting noun in bucket:
+	if the noun is not fountain water:
+		say "Why would you want to put that in the bucket? Your pockets seem to be near endless anyway."]
 	
 Asgard is a room. "A grand place that is the city of the Gods. Unfortunately you aren't allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. [paragraph break] To the west is Valhalla. "
 
