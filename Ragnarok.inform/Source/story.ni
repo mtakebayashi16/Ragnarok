@@ -16,6 +16,10 @@ Instead of attacking the statue:
     	move staff to player; 
     	say "You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable."
 
+Instead of attacking the staff:
+	move staff to player; 
+    	say "You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable."
+
 Instead of taking the staff, say "you are going to need to use more force to do that."
 	
 Instead of taking the statue:
@@ -84,7 +88,7 @@ Check reading:
 
 Table of Book Contents
 page	content
-1	"[bold type] About the Ragnarok. [roman type] In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don't want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don't fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr."
+1	"[bold type] About the Ragnarok. [roman type] In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don't want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don't fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe, since it was the only living thing, in all of the nine realms, that hadn't been asked not to hurt Baldr. A minor oversight by Baldr's mother, who tried to prevent his death. In order to stop this from happening, you must convince the mistletoe not to harm Baldr."
 2	"[bold type] About the Underworld. [roman type] The Underworld is Hel's domain. She doesn't appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr's horn, Gjallarhorn, comes from this river. However, the river Gjoll is said to feel like thousands of knives, so I wouldn't be to hasty to go swimming. Maybe if you had some sort of pole..."
 3	"[bold type] About Midgard. [roman type] For the time being, the Gods have restricted the accessible area of your homeworld to a janitor's closet and a small forest just outside. They say it is incentive for you to work faster. Not everything here is trash, though, and you may even find something to help you on your journey."
 4	"[bold type] About Valhalla. [roman type] Valhalla, where fallen heros come to celebrate. Seeing as you aren't dead yet, and haven't done anything particularly heroic, Valhalla doesn't hold that much significance to you. Although I would look around closely, you never know what you might find."
@@ -149,6 +153,7 @@ Instead of talking to Heimdallr:
 Understand "the large gate" or "gate" or "opening the large gate" or "opening the gate" as "[gate]". Instead of asking Heimdallr about "[gate]", say "He doesn't seem to want to open the gate."
 
 Understand "where is Gjallarhorn/Horn" or "where is horn/gjallarhorn" or "gjallarhorn/horn" or "horn/gjallarhorn location" as "[horn]". 
+
 Instead of asking Heimdallr about "[horn]", say "Heimdallr says he does not remember, but it should be somewhere nearby."
 	
 Instead of telling Heimdallr about something, try asking Heimdallr about it.
@@ -169,11 +174,17 @@ Before going to Valhalla:
 	otherwise:
 		move player to Valhalla.
 		
-The map is a thing in Valhalla. The description is "A map of Midgard and its surrounding forests, there seems to be a clearing pointed out just south of Midgard."
+The map is in the centerpiece. The description is "A map of Midgard and its surrounding forests, there seems to be a clearing pointed out just south of Midgard."
 
-The centerpiece is a thing in Valhalla. The description is "An intricate centerpiece showing what appears to be several of the worlds you have visited. Upon further inspection you can see there is a map attached."
+Rule for printing room description details of a closed container: stop
 
-Understand "center piece" as centerpiece.
+The centerpiece is a container in Valhalla. It is closed and openable. The description is "An intricate centerpiece showing what appears to be several of the worlds you have visited suspended on a the branches of a tree. Upon further inspection you can see there is a small opening"
+
+Small opening is scenery. The description of the small opening is "A small opening in the centerpiece, it appears to be closed."
+
+Understand "opening" as small opening.
+
+Understand "center piece" as the centerpiece.
 
 Instead of taking the centerpiece:
 	say "A nice floral centerpiece plated in gold. It seems very expensive, probably worth more than you. I wouldn't take it if I were you. Have you tried taking a closer look?"
@@ -295,11 +306,20 @@ Asgard's Gate is east of Asgard and west of Valhalla. Asgard's Gate is a door. A
 
 Understand "golden gate" or "gold gate" or "Asgards Gate" as Asgard's Gate.
 
-The fountain is scenery in Asgard. "A huge marble fountain depicting a man trying to catch a fish with his bare hands. Water shoots out of the fish's mouth into the large circular area surrounding the fountain."
+The fountain is a container in Asgard. The description is "A huge marble fountain depicting a man trying to catch a fish with his bare hands. Water shoots out of the fish's mouth into the large circular area surrounding the fountain."
 
 Understand "large fountain" or "marble fountain" or "large marble fountain" as fountain.
 
-Fountain water is scenery in Asgard. "Shimmering clear water from the fountain"
+Instead of taking the fountain, say "There is no way you could carry that."
+
+fountain water is in the fountain. "Shimmering clear water from the fountain"
+
+Before taking fountain water:
+	if player is carrying the bucket:
+		move fountain water to bucket;
+	if player is not carrying the bucket:
+		say "You scoop up some water in your hands, but it quickly drains through your fingers.";
+		stop the action.
 
 Instead of drinking fountain water, say "Although it is tempting, you have more important matters to get to."
 
@@ -317,15 +337,43 @@ The Forest Clearing is a room. It is south of Midgard. "A small grassy patch in 
 
 Mistletoe is a person in the Forest Clearing. The description of Mistletoe is "A small green plant. It looks pretty harmless in its current state."
 
-Understand "plant" as Mistletoe.
+Understand "plant" or "the Mistletoe" as Mistletoe.
 
-Instead of talking to Mistletoe:
-	say "The mistletoe looks [the mood of Mistletoe]";
+Include Simple Chat by Mark Tilford.
+
+Instead of talking to mistletoe: run a conversation from hello mistletoe.
+
+Hello mistletoe, feeling, good bye, helping hand are chat nodes.
+
+Report giving text for hello mistletoe: instead say "The mistletoe looks [mood of mistletoe]".
+Carry out finding responses to hello mistletoe: link to feeling; link to good bye; link to helping hand.
+
+Report giving link to feeling: say "'Why are you unhappy?' " instead.
+Report giving text for feeling: deactivate feeling; say "'Unhappy? Me? Noo, I'm thinking you are mistaken. Why would I possibly be unhappy? It isn't as if I'm the only living thing deemed too harmless to hurt anyone or anything.' " instead.
+Carry out finding responses to feeling: link to good bye; link to helping hand.
+
+Report giving link to good bye: instead say "Try to convince the mistletoe not to hurt Baldr ".
+Report giving text for good bye: deactivate good bye; say "'Baldr? I don' have a grudge against anyone named Baldr, but if I see 'em, there is nothing stopping me from hurtin' them. That'll show the Gods that I'm not harmless.'" instead.
+Carry out finding responses to good bye: link to helping hand; link to feeling.
+
+Report giving link to helping hand: say "'Is there anything I can do to help?' " instead.
+Report giving text for helping hand: deactivate helping hand; say "'Well if ya' want to be real nice you could get me somethin' to drink. I'm dyin' out here out in the hot sun and all. Maybe I'll listen to what you have to say after ya' get me some water.'" instead.
+Carry out finding responses to helping hand: link to good bye; link to feeling.
+
+Instead of giving fountain water to Mistletoe:
+	now Mistletoe is pleased;
+	move fountain water to Mistletoe;
+	say "The mistletoe is [the mood of Mistletoe]. You successfully convince the mistletoe not to hurt Baldr."
 	
+Instead of giving bucket to Mistletoe:
+	say "The mistletoe has no use for a plastic bucket."
+
 The trees are scenery in the Forest Clearing. "Large pine trees that seem to stretch on forever."
 
 The golden key is a thing in the Forest Clearing. "A large ornate golden key. It looks like it would fit into a large ornate golden gate."
 
 Understand "key" or "ornate key" or "large key" or "large ornate golden key" or "ornate golden key" or "large key" as golden key.
 
-
+An every turn rule:
+	if the mood of Mistletoe is pleased,
+	end the game in victory.

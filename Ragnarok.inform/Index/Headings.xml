@@ -864,6 +864,97 @@
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>123</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 4 of Simple Chat by Mark Tilford begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>124</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>5</integer>
+        <key>Title</key><string>Section - Conversation exiting</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>125</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>18</integer>
+        <key>Title</key><string>Section - Chat nodes</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>126</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>24</integer>
+        <key>Title</key><string>Section - Chat node activation</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>127</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>35</integer>
+        <key>Title</key><string>Section - Setting up the Table of Current Choices</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>128</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>56</integer>
+        <key>Title</key><string>Section - Finding responses to</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>129</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>61</integer>
+        <key>Title</key><string>Section - Giving text for</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>130</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>75</integer>
+        <key>Title</key><string>Section - Giving link to</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>131</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>85</integer>
+        <key>Title</key><string>Section - Preparing</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>132</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>92</integer>
+        <key>Title</key><string>Section - Readchoice I6 routine</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>133</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>108</integer>
+        <key>Title</key><string>Section - Running a conversation from</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>134</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>143</integer>
+        <key>Title</key><string>Section - German (for use with German by Team GerX)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>135</key><dict>
+        <key>Filename</key><string>/Users/mtakebayashi16/Library/Inform/Extensions/mark tilford/simple chat.i7x</string>
+        <key>Line</key><integer>148</integer>
+        <key>Title</key><string>Section - French (for use with French by Eric Forgeot)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>136</key><dict>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>scene understood is a scene which varies</string>
         <key>Level</key><integer>0</integer>

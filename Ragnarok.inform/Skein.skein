@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x310520" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x2cfe20" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x310520" />
-  <item nodeId="node-0x310520">
+  <activeNode nodeId="node-0x54bc1c0" />
+  <item nodeId="node-0x2cfe20">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,7 +12,7 @@ You wake up in a strange room, not entirely knowing why you are here, or even wh
 
 Ragnarok
 An Interactive Fiction by Marissa Takebayashi
-Release 1 / Serial number 140305 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140306 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -25,41 +25,18 @@ You can also see a large gate, a statue and Heimdallr here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="881">NO</temporary>
+    <temporary score="319">NO</temporary>
     <children>
-      <child nodeId="node-0x30f3e0" />
-      <child nodeId="node-0x2d4850" />
-      <child nodeId="node-0x7c9ce20" />
-      <child nodeId="node-0x7cb3b70" />
-      <child nodeId="node-0x8f48e60" />
-      <child nodeId="node-0xa72cfb0" />
-      <child nodeId="node-0x30f6f0" />
-      <child nodeId="node-0x30e3a0" />
-      <child nodeId="node-0x310430" />
+      <child nodeId="node-0x3c3d60" />
+      <child nodeId="node-0x2d63f0" />
+      <child nodeId="node-0x2d6380" />
+      <child nodeId="node-0x2d16c0" />
+      <child nodeId="node-0x2d0c20" />
+      <child nodeId="node-0x2d08e0" />
+      <child nodeId="node-0x2cffa0" />
     </children>
   </item>
-  <item nodeId="node-0x310430">
-    <command xml:space="preserve">take statue</command>
-    <result xml:space="preserve">That is way too large to carry.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="11">YES</temporary>
-    <children>
-      <child nodeId="node-0x310140" />
-    </children>
-  </item>
-  <item nodeId="node-0x310140">
-    <command xml:space="preserve">break statue</command>
-    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-  </item>
-  <item nodeId="node-0x30e3a0">
+  <item nodeId="node-0x2cffa0">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -68,12 +45,11 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="881">YES</temporary>
     <children>
-      <child nodeId="node-0x3e1660" />
-      <child nodeId="node-0x30e2c0" />
-      <child nodeId="node-0xa7aa9f0" />
+      <child nodeId="node-0x2d04b0" />
+      <child nodeId="node-0x2d0050" />
     </children>
   </item>
-  <item nodeId="node-0xa7aa9f0">
+  <item nodeId="node-0x2d0050">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">You should use the read command with a page number.
 
@@ -82,10 +58,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="881">YES</temporary>
     <children>
-      <child nodeId="node-0x8f8dda0" />
+      <child nodeId="node-0x2d00a0" />
     </children>
   </item>
-  <item nodeId="node-0x8f8dda0">
+  <item nodeId="node-0x2d00a0">
     <command xml:space="preserve">read book page 1</command>
     <result xml:space="preserve">I didn&apos;t understand that number.
 
@@ -94,79 +70,7 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="880">YES</temporary>
   </item>
-  <item nodeId="node-0x30e2c0">
-    <command xml:space="preserve">read page 1</command>
-    <result xml:space="preserve">(in the old book)
-You read: &quot; About the Ragnarok. &quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="12">YES</temporary>
-    <children>
-      <child nodeId="node-0x30e250" />
-    </children>
-  </item>
-  <item nodeId="node-0x30e250">
-    <command xml:space="preserve">next page</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="12">YES</temporary>
-    <children>
-      <child nodeId="node-0x30e1e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x30e1e0">
-    <command xml:space="preserve">read next page</command>
-    <result xml:space="preserve">(in the old book)
-You read: &quot; About the Underworld. &quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="12">YES</temporary>
-    <children>
-      <child nodeId="node-0x30e170" />
-    </children>
-  </item>
-  <item nodeId="node-0x30e170">
-    <command xml:space="preserve">read page 4</command>
-    <result xml:space="preserve">(in the old book)
- 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="12">YES</temporary>
-    <children>
-      <child nodeId="node-0x30e100" />
-    </children>
-  </item>
-  <item nodeId="node-0x30e100">
-    <command xml:space="preserve">read page 3</command>
-    <result xml:space="preserve">(in the old book)
-You read: &quot; About Midgard. &quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="12">YES</temporary>
-    <children>
-      <child nodeId="node-0x30e090" />
-    </children>
-  </item>
-  <item nodeId="node-0x30e090">
-    <command xml:space="preserve">read next page</command>
-    <result xml:space="preserve">(in the old book)
- 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="11">YES</temporary>
-  </item>
-  <item nodeId="node-0x3e1660">
+  <item nodeId="node-0x2d04b0">
     <command xml:space="preserve">read page 2</command>
     <result xml:space="preserve">(in the old book)
 You read: &quot; About the Underworld.  The Underworld is Hel&apos;s domain. She doesn&apos;t appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr&apos;s horn, Gjallarhorn, comes from this river. &quot;
@@ -176,10 +80,10 @@ You read: &quot; About the Underworld.  The Underworld is Hel&apos;s domain. She
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
     <children>
-      <child nodeId="node-0x57af040" />
+      <child nodeId="node-0x2d01a0" />
     </children>
   </item>
-  <item nodeId="node-0x57af040">
+  <item nodeId="node-0x2d01a0">
     <command xml:space="preserve">read first page</command>
     <result xml:space="preserve">(in the old book)
 You read: &quot; About the Ragnarok.  In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don&apos;t want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don&apos;t fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr.&quot;
@@ -189,10 +93,10 @@ You read: &quot; About the Ragnarok.  In Norse mythology, Ragnarök is a series 
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
     <children>
-      <child nodeId="node-0x7c7d610" />
+      <child nodeId="node-0x2d0520" />
     </children>
   </item>
-  <item nodeId="node-0x7c7d610">
+  <item nodeId="node-0x2d0520">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -207,10 +111,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
     <children>
-      <child nodeId="node-0x7c89e10" />
+      <child nodeId="node-0x2d0590" />
     </children>
   </item>
-  <item nodeId="node-0x7c89e10">
+  <item nodeId="node-0x2d0590">
     <command xml:space="preserve">x statue</command>
     <result xml:space="preserve">A large stone statue of a tall bearded man holding a staff. It looks like part of the statue is starting to fall off. You can just make out hairline cracks near the hand holding the staff.
 
@@ -219,10 +123,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
     <children>
-      <child nodeId="node-0x7cb3600" />
+      <child nodeId="node-0x2d0600" />
     </children>
   </item>
-  <item nodeId="node-0x7cb3600">
+  <item nodeId="node-0x2d0600">
     <command xml:space="preserve">break statue</command>
     <result xml:space="preserve">You reach up and break off the staff that the statue was holding.
 
@@ -231,10 +135,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
     <children>
-      <child nodeId="node-0x57bde30" />
+      <child nodeId="node-0x2d0670" />
     </children>
   </item>
-  <item nodeId="node-0x57bde30">
+  <item nodeId="node-0x2d0670">
     <command xml:space="preserve">take staff</command>
     <result xml:space="preserve">You are going to need to use more force than that.
 
@@ -243,7 +147,7 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="25">YES</temporary>
   </item>
-  <item nodeId="node-0x30f6f0">
+  <item nodeId="node-0x2d08e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">kgkj 
 &gt;</result>
@@ -251,11 +155,11 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x30f4c0" />
-      <child nodeId="node-0x30f680" />
+      <child nodeId="node-0x2d0bb0" />
+      <child nodeId="node-0x2d0950" />
     </children>
   </item>
-  <item nodeId="node-0x30f680">
+  <item nodeId="node-0x2d0950">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -268,10 +172,10 @@ You can see Gjallarhorn here.
     <changed>NO</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x30f610" />
+      <child nodeId="node-0x2d03f0" />
     </children>
   </item>
-  <item nodeId="node-0x30f610">
+  <item nodeId="node-0x2d03f0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -284,10 +188,10 @@ You can see a large gate and Heimdallr here.
     <changed>NO</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x30f5a0" />
+      <child nodeId="node-0x2d0440" />
     </children>
   </item>
-  <item nodeId="node-0x30f5a0">
+  <item nodeId="node-0x2d0440">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Midgard
@@ -298,10 +202,10 @@ Midgard
     <changed>YES</changed>
     <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x30f530" />
+      <child nodeId="node-0x2d0b40" />
     </children>
   </item>
-  <item nodeId="node-0x30f530">
+  <item nodeId="node-0x2d0b40">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve"> 
 &gt;</result>
@@ -309,14 +213,14 @@ Midgard
     <changed>YES</changed>
     <temporary score="88">YES</temporary>
   </item>
-  <item nodeId="node-0x30f4c0">
+  <item nodeId="node-0x2d0bb0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
   </item>
-  <item nodeId="node-0xa72cfb0">
+  <item nodeId="node-0x2d0c20">
     <command xml:space="preserve">use horn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -325,10 +229,10 @@ Midgard
     <changed>NO</changed>
     <temporary score="864">YES</temporary>
     <children>
-      <child nodeId="node-0xa623310" />
+      <child nodeId="node-0x2d1420" />
     </children>
   </item>
-  <item nodeId="node-0xa623310">
+  <item nodeId="node-0x2d1420">
     <command xml:space="preserve">break statue</command>
     <result xml:space="preserve">You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable.
 
@@ -337,10 +241,10 @@ Midgard
     <changed>NO</changed>
     <temporary score="864">YES</temporary>
     <children>
-      <child nodeId="node-0x7c39500" />
+      <child nodeId="node-0x2d1490" />
     </children>
   </item>
-  <item nodeId="node-0x7c39500">
+  <item nodeId="node-0x2d1490">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -355,10 +259,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="864">YES</temporary>
     <children>
-      <child nodeId="node-0x8fbeaf0" />
+      <child nodeId="node-0x2d1500" />
     </children>
   </item>
-  <item nodeId="node-0x8fbeaf0">
+  <item nodeId="node-0x2d1500">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">While looking at Hel&apos;s Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...
 
@@ -367,10 +271,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="864">YES</temporary>
     <children>
-      <child nodeId="node-0x8fbb310" />
+      <child nodeId="node-0x2d1570" />
     </children>
   </item>
-  <item nodeId="node-0x8fbb310">
+  <item nodeId="node-0x2d1570">
     <command xml:space="preserve">combine barb with staff</command>
     <result xml:space="preserve">You combine the metal barb and the staff to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
 
@@ -379,10 +283,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="864">YES</temporary>
     <children>
-      <child nodeId="node-0x7c82d90" />
+      <child nodeId="node-0x2d15e0" />
     </children>
   </item>
-  <item nodeId="node-0x7c82d90">
+  <item nodeId="node-0x2d15e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -398,10 +302,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="864">YES</temporary>
     <children>
-      <child nodeId="node-0xa7fb6a0" />
+      <child nodeId="node-0x2d1650" />
     </children>
   </item>
-  <item nodeId="node-0xa7fb6a0">
+  <item nodeId="node-0x2d1650">
     <command xml:space="preserve">use pole</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -410,7 +314,7 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="863">YES</temporary>
   </item>
-  <item nodeId="node-0x8f48e60">
+  <item nodeId="node-0x2d16c0">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">A large gate that must be several stories high. It doesn&apos;t look like you are going to be able to open it without Heimdallr&apos;s consent.
 
@@ -419,10 +323,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f32f40" />
+      <child nodeId="node-0x2d1730" />
     </children>
   </item>
-  <item nodeId="node-0x8f32f40">
+  <item nodeId="node-0x2d1730">
     <command xml:space="preserve">x stature</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -431,10 +335,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x9a8cd00" />
+      <child nodeId="node-0x2d09c0" />
     </children>
   </item>
-  <item nodeId="node-0x9a8cd00">
+  <item nodeId="node-0x2d09c0">
     <command xml:space="preserve">x statue</command>
     <result xml:space="preserve">A large stone statue of a tall bearded man holding a staff. It looks like part of the statue is starting to fall off. You can just make out hairline cracks near the hand holding the staff.
 
@@ -443,10 +347,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fc0460" />
+      <child nodeId="node-0x2d0a10" />
     </children>
   </item>
-  <item nodeId="node-0x8fc0460">
+  <item nodeId="node-0x2d0a10">
     <command xml:space="preserve">break hand</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -455,10 +359,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c9f100" />
+      <child nodeId="node-0x2d0a80" />
     </children>
   </item>
-  <item nodeId="node-0x7c9f100">
+  <item nodeId="node-0x2d0a80">
     <command xml:space="preserve">take staff</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -467,10 +371,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x5716270" />
+      <child nodeId="node-0x2d2180" />
     </children>
   </item>
-  <item nodeId="node-0x5716270">
+  <item nodeId="node-0x2d2180">
     <command xml:space="preserve">take pole</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -479,10 +383,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7ca1f20" />
+      <child nodeId="node-0x2d21d0" />
     </children>
   </item>
-  <item nodeId="node-0x7ca1f20">
+  <item nodeId="node-0x2d21d0">
     <command xml:space="preserve">break pole</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -491,10 +395,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x5782390" />
+      <child nodeId="node-0x2d2240" />
     </children>
   </item>
-  <item nodeId="node-0x5782390">
+  <item nodeId="node-0x2d2240">
     <command xml:space="preserve">hit pole</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -503,10 +407,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60e1000" />
+      <child nodeId="node-0x2d22b0" />
     </children>
   </item>
-  <item nodeId="node-0x60e1000">
+  <item nodeId="node-0x2d22b0">
     <command xml:space="preserve">pole</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -515,10 +419,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x2868b0" />
+      <child nodeId="node-0x2d2680" />
     </children>
   </item>
-  <item nodeId="node-0x2868b0">
+  <item nodeId="node-0x2d2680">
     <command xml:space="preserve">grab pole</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -527,10 +431,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60b8080" />
+      <child nodeId="node-0x2d26f0" />
     </children>
   </item>
-  <item nodeId="node-0x60b8080">
+  <item nodeId="node-0x2d26f0">
     <command xml:space="preserve">grab staff</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -539,10 +443,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x5713600" />
+      <child nodeId="node-0x2d2760" />
     </children>
   </item>
-  <item nodeId="node-0x5713600">
+  <item nodeId="node-0x2d2760">
     <command xml:space="preserve">break staff</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -551,10 +455,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x6080a70" />
+      <child nodeId="node-0x2d27d0" />
     </children>
   </item>
-  <item nodeId="node-0x6080a70">
+  <item nodeId="node-0x2d27d0">
     <command xml:space="preserve">take staff</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -563,10 +467,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c93750" />
+      <child nodeId="node-0x2d2840" />
     </children>
   </item>
-  <item nodeId="node-0x7c93750">
+  <item nodeId="node-0x2d2840">
     <command xml:space="preserve">hit staff</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -575,10 +479,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7cd0680" />
+      <child nodeId="node-0x2d2960" />
     </children>
   </item>
-  <item nodeId="node-0x7cd0680">
+  <item nodeId="node-0x2d2960">
     <command xml:space="preserve">break statue</command>
     <result xml:space="preserve">You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable.
 
@@ -587,10 +491,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60e5d50" />
+      <child nodeId="node-0x2d29d0" />
     </children>
   </item>
-  <item nodeId="node-0x60e5d50">
+  <item nodeId="node-0x2d29d0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -605,10 +509,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f35820" />
+      <child nodeId="node-0x2d2a40" />
     </children>
   </item>
-  <item nodeId="node-0x8f35820">
+  <item nodeId="node-0x2d2a40">
     <command xml:space="preserve">x bookshelf</command>
     <result xml:space="preserve">A large wooden bookshelf. Mostly empty, except for an old dusty book on one of the rows.
 
@@ -619,10 +523,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f94100" />
+      <child nodeId="node-0x2d2ab0" />
     </children>
   </item>
-  <item nodeId="node-0x8f94100">
+  <item nodeId="node-0x2d2ab0">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">You see nothing special about the old book.
 
@@ -631,10 +535,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57b5ab0" />
+      <child nodeId="node-0x2d2b20" />
     </children>
   </item>
-  <item nodeId="node-0x57b5ab0">
+  <item nodeId="node-0x2d2b20">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -643,20 +547,20 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f54130" />
+      <child nodeId="node-0x2d2b90" />
     </children>
   </item>
-  <item nodeId="node-0x8f54130">
+  <item nodeId="node-0x2d2b90">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60e27b0" />
+      <child nodeId="node-0x2d2c00" />
     </children>
   </item>
-  <item nodeId="node-0x60e27b0">
+  <item nodeId="node-0x2d2c00">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -665,10 +569,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60ad290" />
+      <child nodeId="node-0x2d2c70" />
     </children>
   </item>
-  <item nodeId="node-0x60ad290">
+  <item nodeId="node-0x2d2c70">
     <command xml:space="preserve">read page 1</command>
     <result xml:space="preserve">What do you want to read page that in?
 
@@ -677,10 +581,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x3c1300" />
+      <child nodeId="node-0x2d2ce0" />
     </children>
   </item>
-  <item nodeId="node-0x3c1300">
+  <item nodeId="node-0x2d2ce0">
     <command xml:space="preserve">of book</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -689,10 +593,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60a8fa0" />
+      <child nodeId="node-0x2d2d50" />
     </children>
   </item>
-  <item nodeId="node-0x60a8fa0">
+  <item nodeId="node-0x2d2d50">
     <command xml:space="preserve">read page 1 of book</command>
     <result xml:space="preserve">You read: &quot; About the Ragnarok.  In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don&apos;t want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don&apos;t fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr.&quot;
 
@@ -701,10 +605,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7ce6ed0" />
+      <child nodeId="node-0x2d2dc0" />
     </children>
   </item>
-  <item nodeId="node-0x7ce6ed0">
+  <item nodeId="node-0x2d2dc0">
     <command xml:space="preserve">read page 2 of book</command>
     <result xml:space="preserve">You read: &quot; About the Underworld.  The Underworld is Hel&apos;s domain. She doesn&apos;t appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr&apos;s horn, Gjallarhorn, comes from this river. However, the river Gjoll is said to feel like thousands of knives, so I wouldn&apos;t be to hasty to go swimming. Maybe if you had some sort of pole...&quot;
 
@@ -713,10 +617,10 @@ In the bookshelf is an old book.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60e5000" />
+      <child nodeId="node-0x2d2e30" />
     </children>
   </item>
-  <item nodeId="node-0x60e5000">
+  <item nodeId="node-0x2d2e30">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -731,10 +635,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60cf220" />
+      <child nodeId="node-0x2d1f60" />
     </children>
   </item>
-  <item nodeId="node-0x60cf220">
+  <item nodeId="node-0x2d1f60">
     <command xml:space="preserve">x heimdallr</command>
     <result xml:space="preserve">A large, rather intimidating man. He looks unhappy. When asked, he says that he is missing Gjallarhorn, the horn from the river Gjoll.
 
@@ -743,10 +647,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c681d0" />
+      <child nodeId="node-0x2d1fd0" />
     </children>
   </item>
-  <item nodeId="node-0x7c681d0">
+  <item nodeId="node-0x2d1fd0">
     <command xml:space="preserve">ask location of horn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -755,10 +659,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x9a95140" />
+      <child nodeId="node-0x2d2040" />
     </children>
   </item>
-  <item nodeId="node-0x9a95140">
+  <item nodeId="node-0x2d2040">
     <command xml:space="preserve">ask about location of horn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -767,10 +671,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x9a86720" />
+      <child nodeId="node-0x2d20b0" />
     </children>
   </item>
-  <item nodeId="node-0x9a86720">
+  <item nodeId="node-0x2d20b0">
     <command xml:space="preserve">ask man about horn</command>
     <result xml:space="preserve">Heimdallr says he does not remember, but it should be somewhere nearby.
 
@@ -779,10 +683,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fc2c80" />
+      <child nodeId="node-0x2d2120" />
     </children>
   </item>
-  <item nodeId="node-0x8fc2c80">
+  <item nodeId="node-0x2d2120">
     <command xml:space="preserve">go south</command>
     <result xml:space="preserve">
 Underworld
@@ -797,10 +701,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60820e0" />
+      <child nodeId="node-0x2d30a0" />
     </children>
   </item>
-  <item nodeId="node-0x60820e0">
+  <item nodeId="node-0x2d30a0">
     <command xml:space="preserve">x river</command>
     <result xml:space="preserve">A flowing river that looks more intimidating than refreshing.
 
@@ -811,10 +715,10 @@ In Gjoll is Gjallarhorn.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x3042c0" />
+      <child nodeId="node-0x2d3110" />
     </children>
   </item>
-  <item nodeId="node-0x3042c0">
+  <item nodeId="node-0x2d3110">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick your pole in the water, but you end up pushing Gjallarhorn around. Hmm, maybe if you had something sharp to combine with the pole.
 
@@ -823,10 +727,10 @@ In Gjoll is Gjallarhorn.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7cb04c0" />
+      <child nodeId="node-0x2d3180" />
     </children>
   </item>
-  <item nodeId="node-0x7cb04c0">
+  <item nodeId="node-0x2d3180">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   an old book
@@ -837,10 +741,10 @@ In Gjoll is Gjallarhorn.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fcae70" />
+      <child nodeId="node-0x2d31f0" />
     </children>
   </item>
-  <item nodeId="node-0x8fcae70">
+  <item nodeId="node-0x2d31f0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Underworld
 A place that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. You can see the river Gjoll here. 
@@ -854,10 +758,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60ba160" />
+      <child nodeId="node-0x2d3260" />
     </children>
   </item>
-  <item nodeId="node-0x60ba160">
+  <item nodeId="node-0x2d3260">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">While looking at Hel&apos;s Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...
 
@@ -866,10 +770,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fd5b80" />
+      <child nodeId="node-0x2d34e0" />
     </children>
   </item>
-  <item nodeId="node-0x8fd5b80">
+  <item nodeId="node-0x2d34e0">
     <command xml:space="preserve">take barb</command>
     <result xml:space="preserve">You already have that.
 
@@ -878,10 +782,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c3a950" />
+      <child nodeId="node-0x2d3550" />
     </children>
   </item>
-  <item nodeId="node-0x7c3a950">
+  <item nodeId="node-0x2d3550">
     <command xml:space="preserve">combine barb with pole</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -890,10 +794,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c621f0" />
+      <child nodeId="node-0x2d35c0" />
     </children>
   </item>
-  <item nodeId="node-0x7c621f0">
+  <item nodeId="node-0x2d35c0">
     <command xml:space="preserve">x river</command>
     <result xml:space="preserve">A flowing river that looks more intimidating than refreshing.
 
@@ -904,10 +808,10 @@ In Gjoll is Gjallarhorn.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x9a60360" />
+      <child nodeId="node-0x2d3630" />
     </children>
   </item>
-  <item nodeId="node-0x9a60360">
+  <item nodeId="node-0x2d3630">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick your pole in the water, but you end up pushing Gjallarhorn around. Hmm, maybe if you had something sharp to combine with the pole.
 
@@ -916,10 +820,10 @@ In Gjoll is Gjallarhorn.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57d90b0" />
+      <child nodeId="node-0x2d36a0" />
     </children>
   </item>
-  <item nodeId="node-0x57d90b0">
+  <item nodeId="node-0x2d36a0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Underworld
 A place that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. You can see the river Gjoll here. 
@@ -933,10 +837,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f3dd30" />
+      <child nodeId="node-0x2d3980" />
     </children>
   </item>
-  <item nodeId="node-0x8f3dd30">
+  <item nodeId="node-0x2d3980">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">While looking at Hel&apos;s Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...
 
@@ -945,10 +849,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c13920" />
+      <child nodeId="node-0x2d39f0" />
     </children>
   </item>
-  <item nodeId="node-0x7c13920">
+  <item nodeId="node-0x2d39f0">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">
 Portal Room
@@ -964,10 +868,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7cde270" />
+      <child nodeId="node-0x2d3a60" />
     </children>
   </item>
-  <item nodeId="node-0x7cde270">
+  <item nodeId="node-0x2d3a60">
     <command xml:space="preserve">read page 1 of book</command>
     <result xml:space="preserve">You read: &quot; About the Ragnarok.  In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don&apos;t want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don&apos;t fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr.&quot;
 
@@ -976,10 +880,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7cf0bd0" />
+      <child nodeId="node-0x2d3ad0" />
     </children>
   </item>
-  <item nodeId="node-0x7cf0bd0">
+  <item nodeId="node-0x2d3ad0">
     <command xml:space="preserve">read page 2 of book</command>
     <result xml:space="preserve">You read: &quot; About the Underworld.  The Underworld is Hel&apos;s domain. She doesn&apos;t appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr&apos;s horn, Gjallarhorn, comes from this river. However, the river Gjoll is said to feel like thousands of knives, so I wouldn&apos;t be to hasty to go swimming. Maybe if you had some sort of pole...&quot;
 
@@ -988,10 +892,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fc2770" />
+      <child nodeId="node-0x2d3b40" />
     </children>
   </item>
-  <item nodeId="node-0x8fc2770">
+  <item nodeId="node-0x2d3b40">
     <command xml:space="preserve">x man</command>
     <result xml:space="preserve">A large, rather intimidating man. He looks unhappy. When asked, he says that he is missing Gjallarhorn, the horn from the river Gjoll.
 
@@ -1000,10 +904,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57f6f50" />
+      <child nodeId="node-0x2d3bb0" />
     </children>
   </item>
-  <item nodeId="node-0x57f6f50">
+  <item nodeId="node-0x2d3bb0">
     <command xml:space="preserve">give man horn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1012,10 +916,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7cd2770" />
+      <child nodeId="node-0x2d3c20" />
     </children>
   </item>
-  <item nodeId="node-0x7cd2770">
+  <item nodeId="node-0x2d3c20">
     <command xml:space="preserve">thankeee</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -1024,10 +928,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f2d7c0" />
+      <child nodeId="node-0x2d3c90" />
     </children>
   </item>
-  <item nodeId="node-0x8f2d7c0">
+  <item nodeId="node-0x2d3c90">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -1042,10 +946,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x602ede0" />
+      <child nodeId="node-0x2d3d00" />
     </children>
   </item>
-  <item nodeId="node-0x602ede0">
+  <item nodeId="node-0x2d3d00">
     <command xml:space="preserve">read page 3 of book</command>
     <result xml:space="preserve">You read: &quot; About Midgard.  For the time being, the Gods have restricted the accessible area of your homeworld to a janitor&apos;s closet and a small forest just outside. They say it is incentive for you to work faster. Not everything here is trash, though, and you may even find something to help you on your journey.&quot;
 
@@ -1054,10 +958,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x9a6b8f0" />
+      <child nodeId="node-0x2d3d70" />
     </children>
   </item>
-  <item nodeId="node-0x9a6b8f0">
+  <item nodeId="node-0x2d3d70">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">It seems Heimdallr doesn&apos;t want you going in there.
 
@@ -1066,10 +970,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x261750" />
+      <child nodeId="node-0x2d3de0" />
     </children>
   </item>
-  <item nodeId="node-0x261750">
+  <item nodeId="node-0x2d3de0">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">A large gate that must be several stories high. It doesn&apos;t look like you are going to be able to open it without Heimdallr&apos;s consent.
 
@@ -1078,10 +982,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x9a594e0" />
+      <child nodeId="node-0x2d3e50" />
     </children>
   </item>
-  <item nodeId="node-0x9a594e0">
+  <item nodeId="node-0x2d3e50">
     <command xml:space="preserve">x asgards gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1090,10 +994,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x6008e60" />
+      <child nodeId="node-0x2d3ec0" />
     </children>
   </item>
-  <item nodeId="node-0x6008e60">
+  <item nodeId="node-0x2d3ec0">
     <command xml:space="preserve">x large gate</command>
     <result xml:space="preserve">A large gate that must be several stories high. It doesn&apos;t look like you are going to be able to open it without Heimdallr&apos;s consent.
 
@@ -1102,10 +1006,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f81fd0" />
+      <child nodeId="node-0x2d3f30" />
     </children>
   </item>
-  <item nodeId="node-0x8f81fd0">
+  <item nodeId="node-0x2d3f30">
     <command xml:space="preserve">x map</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1114,10 +1018,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x2d4fb0" />
+      <child nodeId="node-0x2d3fa0" />
     </children>
   </item>
-  <item nodeId="node-0x2d4fb0">
+  <item nodeId="node-0x2d3fa0">
     <command xml:space="preserve">x centerpiece</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1126,10 +1030,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x28e960" />
+      <child nodeId="node-0x2d4010" />
     </children>
   </item>
-  <item nodeId="node-0x28e960">
+  <item nodeId="node-0x2d4010">
     <command xml:space="preserve">x map</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1138,10 +1042,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f56480" />
+      <child nodeId="node-0x2d4080" />
     </children>
   </item>
-  <item nodeId="node-0x8f56480">
+  <item nodeId="node-0x2d4080">
     <command xml:space="preserve">take map</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1150,10 +1054,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57a7a00" />
+      <child nodeId="node-0x2d40f0" />
     </children>
   </item>
-  <item nodeId="node-0x57a7a00">
+  <item nodeId="node-0x2d40f0">
     <command xml:space="preserve">take centerpiece</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1162,10 +1066,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c95a60" />
+      <child nodeId="node-0x2d4160" />
     </children>
   </item>
-  <item nodeId="node-0x7c95a60">
+  <item nodeId="node-0x2d4160">
     <command xml:space="preserve">x center piece</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1174,10 +1078,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa22dfd0" />
+      <child nodeId="node-0x2d41d0" />
     </children>
   </item>
-  <item nodeId="node-0xa22dfd0">
+  <item nodeId="node-0x2d41d0">
     <command xml:space="preserve">x centerpiece</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1186,10 +1090,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x6084db0" />
+      <child nodeId="node-0x2d4240" />
     </children>
   </item>
-  <item nodeId="node-0x6084db0">
+  <item nodeId="node-0x2d4240">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -1204,10 +1108,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c93220" />
+      <child nodeId="node-0x2d42b0" />
     </children>
   </item>
-  <item nodeId="node-0x7c93220">
+  <item nodeId="node-0x2d42b0">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Midgard
@@ -1222,10 +1126,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c4a640" />
+      <child nodeId="node-0x2d4320" />
     </children>
   </item>
-  <item nodeId="node-0x7c4a640">
+  <item nodeId="node-0x2d4320">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">The forest looks thick and unwelcoming. It would be foolish to enter without a map.
 
@@ -1234,10 +1138,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x570bbb0" />
+      <child nodeId="node-0x2d4390" />
     </children>
   </item>
-  <item nodeId="node-0x570bbb0">
+  <item nodeId="node-0x2d4390">
     <command xml:space="preserve">talk to man</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1246,10 +1150,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c98090" />
+      <child nodeId="node-0x2d4400" />
     </children>
   </item>
-  <item nodeId="node-0x7c98090">
+  <item nodeId="node-0x2d4400">
     <command xml:space="preserve">give man hron</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1258,10 +1162,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fb8ca0" />
+      <child nodeId="node-0x2d4470" />
     </children>
   </item>
-  <item nodeId="node-0x8fb8ca0">
+  <item nodeId="node-0x2d4470">
     <command xml:space="preserve">give man horn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1270,10 +1174,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60917a0" />
+      <child nodeId="node-0x2d44e0" />
     </children>
   </item>
-  <item nodeId="node-0x60917a0">
+  <item nodeId="node-0x2d44e0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Midgard
 You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
@@ -1287,10 +1191,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f02a70" />
+      <child nodeId="node-0x2d4550" />
     </children>
   </item>
-  <item nodeId="node-0x8f02a70">
+  <item nodeId="node-0x2d4550">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -1299,10 +1203,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57f1260" />
+      <child nodeId="node-0x2d45c0" />
     </children>
   </item>
-  <item nodeId="node-0x57f1260">
+  <item nodeId="node-0x2d45c0">
     <command xml:space="preserve">read page 3 of book</command>
     <result xml:space="preserve">You read: &quot; About Midgard.  For the time being, the Gods have restricted the accessible area of your homeworld to a janitor&apos;s closet and a small forest just outside. They say it is incentive for you to work faster. Not everything here is trash, though, and you may even find something to help you on your journey.&quot;
 
@@ -1311,10 +1215,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x381920" />
+      <child nodeId="node-0x2d4630" />
     </children>
   </item>
-  <item nodeId="node-0x381920">
+  <item nodeId="node-0x2d4630">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Midgard
 You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
@@ -1328,10 +1232,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fb2540" />
+      <child nodeId="node-0x2d46a0" />
     </children>
   </item>
-  <item nodeId="node-0x8fb2540">
+  <item nodeId="node-0x2d46a0">
     <command xml:space="preserve">x trash bags</command>
     <result xml:space="preserve">Large garbage bags filled with who-knows-what. You can smell it from several feet away.
 
@@ -1340,10 +1244,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f772a0" />
+      <child nodeId="node-0x2d4710" />
     </children>
   </item>
-  <item nodeId="node-0x8f772a0">
+  <item nodeId="node-0x2d4710">
     <command xml:space="preserve">x trash</command>
     <result xml:space="preserve">Large garbage bags filled with who-knows-what. You can smell it from several feet away.
 
@@ -1352,10 +1256,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57e0a70" />
+      <child nodeId="node-0x2d4780" />
     </children>
   </item>
-  <item nodeId="node-0x57e0a70">
+  <item nodeId="node-0x2d4780">
     <command xml:space="preserve">take bags</command>
     <result xml:space="preserve">I wouldn&apos;t want to touch that unless you want to smell like garbage for the rest of the week.
 
@@ -1364,10 +1268,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa27c630" />
+      <child nodeId="node-0x2d47f0" />
     </children>
   </item>
-  <item nodeId="node-0xa27c630">
+  <item nodeId="node-0x2d47f0">
     <command xml:space="preserve">take trash bags</command>
     <result xml:space="preserve">I wouldn&apos;t want to touch that unless you want to smell like garbage for the rest of the week.
 
@@ -1376,10 +1280,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c46530" />
+      <child nodeId="node-0x2d4860" />
     </children>
   </item>
-  <item nodeId="node-0x7c46530">
+  <item nodeId="node-0x2d4860">
     <command xml:space="preserve">x mop</command>
     <result xml:space="preserve">A blue and white dust mop.
 
@@ -1388,10 +1292,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fe72f0" />
+      <child nodeId="node-0x2d48d0" />
     </children>
   </item>
-  <item nodeId="node-0x8fe72f0">
+  <item nodeId="node-0x2d48d0">
     <command xml:space="preserve">take mop</command>
     <result xml:space="preserve">You probably won&apos;t be cleaning where you are going.
 
@@ -1400,10 +1304,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x574fd60" />
+      <child nodeId="node-0x2d4940" />
     </children>
   </item>
-  <item nodeId="node-0x574fd60">
+  <item nodeId="node-0x2d4940">
     <command xml:space="preserve">x bucket</command>
     <result xml:space="preserve">A medium sized plastic bucket.
 
@@ -1412,10 +1316,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c1ddd0" />
+      <child nodeId="node-0x2d49b0" />
     </children>
   </item>
-  <item nodeId="node-0x7c1ddd0">
+  <item nodeId="node-0x2d49b0">
     <command xml:space="preserve">take bucket</command>
     <result xml:space="preserve">Taken.
 
@@ -1424,10 +1328,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa2d8160" />
+      <child nodeId="node-0x2d4a20" />
     </children>
   </item>
-  <item nodeId="node-0xa2d8160">
+  <item nodeId="node-0x2d4a20">
     <command xml:space="preserve">read page 4 of book</command>
     <result xml:space="preserve">The section on Valhalla seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -1436,10 +1340,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c6ffd0" />
+      <child nodeId="node-0x2d4a90" />
     </children>
   </item>
-  <item nodeId="node-0x7c6ffd0">
+  <item nodeId="node-0x2d4a90">
     <command xml:space="preserve">read next page</command>
     <result xml:space="preserve">What do you want to read that in?
 
@@ -1448,10 +1352,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa226ae0" />
+      <child nodeId="node-0x2d4b00" />
     </children>
   </item>
-  <item nodeId="node-0xa226ae0">
+  <item nodeId="node-0x2d4b00">
     <command xml:space="preserve">book</command>
     <result xml:space="preserve">The section on Valhalla seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -1460,10 +1364,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7cb71f0" />
+      <child nodeId="node-0x2d4b70" />
     </children>
   </item>
-  <item nodeId="node-0x7cb71f0">
+  <item nodeId="node-0x2d4b70">
     <command xml:space="preserve">east</command>
     <result xml:space="preserve">
 Portal Room
@@ -1479,10 +1383,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x609e200" />
+      <child nodeId="node-0x2d4be0" />
     </children>
   </item>
-  <item nodeId="node-0x609e200">
+  <item nodeId="node-0x2d4be0">
     <command xml:space="preserve">arge</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -1491,10 +1395,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60a2d30" />
+      <child nodeId="node-0x2d4c50" />
     </children>
   </item>
-  <item nodeId="node-0x60a2d30">
+  <item nodeId="node-0x2d4c50">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">It seems Heimdallr doesn&apos;t want you going in there.
 
@@ -1503,10 +1407,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x602fe60" />
+      <child nodeId="node-0x2d4cc0" />
     </children>
   </item>
-  <item nodeId="node-0x602fe60">
+  <item nodeId="node-0x2d4cc0">
     <command xml:space="preserve">read page 5 of booj</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1515,10 +1419,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57f6520" />
+      <child nodeId="node-0x2d4d30" />
     </children>
   </item>
-  <item nodeId="node-0x57f6520">
+  <item nodeId="node-0x2d4d30">
     <command xml:space="preserve">read page 5 of book</command>
     <result xml:space="preserve">The section on the forest seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -1527,10 +1431,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa258f80" />
+      <child nodeId="node-0x2d4da0" />
     </children>
   </item>
-  <item nodeId="node-0xa258f80">
+  <item nodeId="node-0x2d4da0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -1545,10 +1449,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57cc940" />
+      <child nodeId="node-0x2d4e10" />
     </children>
   </item>
-  <item nodeId="node-0x57cc940">
+  <item nodeId="node-0x2d4e10">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a bucket
@@ -1561,10 +1465,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c15660" />
+      <child nodeId="node-0x2d4e80" />
     </children>
   </item>
-  <item nodeId="node-0x7c15660">
+  <item nodeId="node-0x2d4e80">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">
 Underworld
@@ -1579,10 +1483,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60f0240" />
+      <child nodeId="node-0x2d4ef0" />
     </children>
   </item>
-  <item nodeId="node-0x60f0240">
+  <item nodeId="node-0x2d4ef0">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">
 Portal Room
@@ -1598,10 +1502,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57b7eb0" />
+      <child nodeId="node-0x2d4f60" />
     </children>
   </item>
-  <item nodeId="node-0x57b7eb0">
+  <item nodeId="node-0x2d4f60">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">
 Underworld
@@ -1616,10 +1520,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f222f0" />
+      <child nodeId="node-0x2d4fd0" />
     </children>
   </item>
-  <item nodeId="node-0x8f222f0">
+  <item nodeId="node-0x2d4fd0">
     <command xml:space="preserve">sough</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -1628,10 +1532,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60b5740" />
+      <child nodeId="node-0x2d5040" />
     </children>
   </item>
-  <item nodeId="node-0x60b5740">
+  <item nodeId="node-0x2d5040">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -1640,10 +1544,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60b8620" />
+      <child nodeId="node-0x2d50b0" />
     </children>
   </item>
-  <item nodeId="node-0x60b8620">
+  <item nodeId="node-0x2d50b0">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">
 Portal Room
@@ -1659,10 +1563,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa2f3dc0" />
+      <child nodeId="node-0x2d5120" />
     </children>
   </item>
-  <item nodeId="node-0xa2f3dc0">
+  <item nodeId="node-0x2d5120">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Midgard
@@ -1675,10 +1579,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x249d80" />
+      <child nodeId="node-0x2d5190" />
     </children>
   </item>
-  <item nodeId="node-0x249d80">
+  <item nodeId="node-0x2d5190">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">The forest looks thick and unwelcoming. It would be foolish to enter without a map.
 
@@ -1687,10 +1591,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c7c930" />
+      <child nodeId="node-0x2d5200" />
     </children>
   </item>
-  <item nodeId="node-0x7c7c930">
+  <item nodeId="node-0x2d5200">
     <command xml:space="preserve">x trees</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1699,10 +1603,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fae9c0" />
+      <child nodeId="node-0x2d5270" />
     </children>
   </item>
-  <item nodeId="node-0x8fae9c0">
+  <item nodeId="node-0x2d5270">
     <command xml:space="preserve">x forest</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1711,10 +1615,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x609d9b0" />
+      <child nodeId="node-0x2d52e0" />
     </children>
   </item>
-  <item nodeId="node-0x609d9b0">
+  <item nodeId="node-0x2d52e0">
     <command xml:space="preserve">x grassy patch</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1723,10 +1627,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7ca7ed0" />
+      <child nodeId="node-0x2d5350" />
     </children>
   </item>
-  <item nodeId="node-0x7ca7ed0">
+  <item nodeId="node-0x2d5350">
     <command xml:space="preserve">x sunlight</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1735,10 +1639,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57e1540" />
+      <child nodeId="node-0x2d53c0" />
     </children>
   </item>
-  <item nodeId="node-0x57e1540">
+  <item nodeId="node-0x2d53c0">
     <command xml:space="preserve">x key</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1747,10 +1651,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fc5370" />
+      <child nodeId="node-0x2d5430" />
     </children>
   </item>
-  <item nodeId="node-0x8fc5370">
+  <item nodeId="node-0x2d5430">
     <command xml:space="preserve">x golden key</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1759,10 +1663,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa2ab270" />
+      <child nodeId="node-0x2d54a0" />
     </children>
   </item>
-  <item nodeId="node-0xa2ab270">
+  <item nodeId="node-0x2d54a0">
     <command xml:space="preserve">take key</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1771,10 +1675,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f03040" />
+      <child nodeId="node-0x2d5510" />
     </children>
   </item>
-  <item nodeId="node-0x8f03040">
+  <item nodeId="node-0x2d5510">
     <command xml:space="preserve">x mistletoe</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1783,10 +1687,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57aea60" />
+      <child nodeId="node-0x2d5580" />
     </children>
   </item>
-  <item nodeId="node-0x57aea60">
+  <item nodeId="node-0x2d5580">
     <command xml:space="preserve">take mistetoe</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1795,10 +1699,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa221470" />
+      <child nodeId="node-0x2d55f0" />
     </children>
   </item>
-  <item nodeId="node-0xa221470">
+  <item nodeId="node-0x2d55f0">
     <command xml:space="preserve">take mistletoe</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1807,10 +1711,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x7c8da70" />
+      <child nodeId="node-0x2d5660" />
     </children>
   </item>
-  <item nodeId="node-0x7c8da70">
+  <item nodeId="node-0x2d5660">
     <command xml:space="preserve">read page 1 of book</command>
     <result xml:space="preserve">You read: &quot; About the Ragnarok.  In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don&apos;t want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don&apos;t fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr.&quot;
 
@@ -1819,10 +1723,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa2c7450" />
+      <child nodeId="node-0x2d56d0" />
     </children>
   </item>
-  <item nodeId="node-0xa2c7450">
+  <item nodeId="node-0x2d56d0">
     <command xml:space="preserve">take to mistletoe</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1831,10 +1735,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60c86b0" />
+      <child nodeId="node-0x2d5740" />
     </children>
   </item>
-  <item nodeId="node-0x60c86b0">
+  <item nodeId="node-0x2d5740">
     <command xml:space="preserve">talk to mistletoe</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1843,10 +1747,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f0b2b0" />
+      <child nodeId="node-0x2d57b0" />
     </children>
   </item>
-  <item nodeId="node-0x8f0b2b0">
+  <item nodeId="node-0x2d57b0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Midgard
 You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
@@ -1858,10 +1762,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f2e010" />
+      <child nodeId="node-0x2d5820" />
     </children>
   </item>
-  <item nodeId="node-0x8f2e010">
+  <item nodeId="node-0x2d5820">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -1870,10 +1774,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60ee230" />
+      <child nodeId="node-0x2d5890" />
     </children>
   </item>
-  <item nodeId="node-0x60ee230">
+  <item nodeId="node-0x2d5890">
     <command xml:space="preserve">read page 5 of book</command>
     <result xml:space="preserve">The section on the forest seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -1882,10 +1786,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f037b0" />
+      <child nodeId="node-0x2d5900" />
     </children>
   </item>
-  <item nodeId="node-0x8f037b0">
+  <item nodeId="node-0x2d5900">
     <command xml:space="preserve">read page 4</command>
     <result xml:space="preserve">What do you want to read page that in?
 
@@ -1894,10 +1798,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60bec80" />
+      <child nodeId="node-0x2d5970" />
     </children>
   </item>
-  <item nodeId="node-0x60bec80">
+  <item nodeId="node-0x2d5970">
     <command xml:space="preserve">book</command>
     <result xml:space="preserve">The section on Valhalla seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -1906,10 +1810,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60b5450" />
+      <child nodeId="node-0x2d59e0" />
     </children>
   </item>
-  <item nodeId="node-0x60b5450">
+  <item nodeId="node-0x2d59e0">
     <command xml:space="preserve">read page 6</command>
     <result xml:space="preserve">What do you want to read page that in?
 
@@ -1918,10 +1822,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f99e50" />
+      <child nodeId="node-0x2d5a50" />
     </children>
   </item>
-  <item nodeId="node-0x8f99e50">
+  <item nodeId="node-0x2d5a50">
     <command xml:space="preserve">book</command>
     <result xml:space="preserve">The section on Asgard seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -1930,10 +1834,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fe7640" />
+      <child nodeId="node-0x2d5ac0" />
     </children>
   </item>
-  <item nodeId="node-0x8fe7640">
+  <item nodeId="node-0x2d5ac0">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -1942,10 +1846,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa21a2a0" />
+      <child nodeId="node-0x2d5b30" />
     </children>
   </item>
-  <item nodeId="node-0xa21a2a0">
+  <item nodeId="node-0x2d5b30">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">The forest looks thick and unwelcoming. It would be foolish to enter without a map.
 
@@ -1954,10 +1858,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x2611b0" />
+      <child nodeId="node-0x2d5ba0" />
     </children>
   </item>
-  <item nodeId="node-0x2611b0">
+  <item nodeId="node-0x2d5ba0">
     <command xml:space="preserve">east</command>
     <result xml:space="preserve">
 Portal Room
@@ -1973,10 +1877,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8fde820" />
+      <child nodeId="node-0x2d5c10" />
     </children>
   </item>
-  <item nodeId="node-0x8fde820">
+  <item nodeId="node-0x2d5c10">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Midgard
@@ -1989,10 +1893,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x57da140" />
+      <child nodeId="node-0x2d5c80" />
     </children>
   </item>
-  <item nodeId="node-0x57da140">
+  <item nodeId="node-0x2d5c80">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -2001,10 +1905,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f58f60" />
+      <child nodeId="node-0x2d5cf0" />
     </children>
   </item>
-  <item nodeId="node-0x8f58f60">
+  <item nodeId="node-0x2d5cf0">
     <command xml:space="preserve">east</command>
     <result xml:space="preserve">
 Portal Room
@@ -2020,10 +1924,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f8b330" />
+      <child nodeId="node-0x2d5d60" />
     </children>
   </item>
-  <item nodeId="node-0x8f8b330">
+  <item nodeId="node-0x2d5d60">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">It seems Heimdallr doesn&apos;t want you going in there.
 
@@ -2032,10 +1936,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x8f60b00" />
+      <child nodeId="node-0x2d5dd0" />
     </children>
   </item>
-  <item nodeId="node-0x8f60b00">
+  <item nodeId="node-0x2d5dd0">
     <command xml:space="preserve">x asgards gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2044,10 +1948,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa26fda0" />
+      <child nodeId="node-0x2d5e40" />
     </children>
   </item>
-  <item nodeId="node-0xa26fda0">
+  <item nodeId="node-0x2d5e40">
     <command xml:space="preserve">open asgards gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2056,10 +1960,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60be4b0" />
+      <child nodeId="node-0x2d5eb0" />
     </children>
   </item>
-  <item nodeId="node-0x60be4b0">
+  <item nodeId="node-0x2d5eb0">
     <command xml:space="preserve">unlock asgards gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2068,10 +1972,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60f6430" />
+      <child nodeId="node-0x2d5f20" />
     </children>
   </item>
-  <item nodeId="node-0x60f6430">
+  <item nodeId="node-0x2d5f20">
     <command xml:space="preserve">key</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -2080,10 +1984,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa2dcdd0" />
+      <child nodeId="node-0x2d5f90" />
     </children>
   </item>
-  <item nodeId="node-0xa2dcdd0">
+  <item nodeId="node-0x2d5f90">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Midgard
@@ -2096,10 +2000,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa274ca0" />
+      <child nodeId="node-0x2d6000" />
     </children>
   </item>
-  <item nodeId="node-0xa274ca0">
+  <item nodeId="node-0x2d6000">
     <command xml:space="preserve">x fountain</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2108,10 +2012,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60f6390" />
+      <child nodeId="node-0x2d6070" />
     </children>
   </item>
-  <item nodeId="node-0x60f6390">
+  <item nodeId="node-0x2d6070">
     <command xml:space="preserve">fountain</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -2120,10 +2024,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa281030" />
+      <child nodeId="node-0x2d60e0" />
     </children>
   </item>
-  <item nodeId="node-0xa281030">
+  <item nodeId="node-0x2d60e0">
     <command xml:space="preserve">fountain water</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -2132,10 +2036,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa2c09c0" />
+      <child nodeId="node-0x2d6150" />
     </children>
   </item>
-  <item nodeId="node-0xa2c09c0">
+  <item nodeId="node-0x2d6150">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2144,10 +2048,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0xa209050" />
+      <child nodeId="node-0x2d61c0" />
     </children>
   </item>
-  <item nodeId="node-0xa209050">
+  <item nodeId="node-0x2d61c0">
     <command xml:space="preserve">read page 1 in book</command>
     <result xml:space="preserve">You read: &quot; About the Ragnarok.  In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don&apos;t want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don&apos;t fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe. In order to stop this from happening, you must convince the mistletoe not to harm Baldr.&quot;
 
@@ -2156,10 +2060,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>NO</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x608ca40" />
+      <child nodeId="node-0x2d6230" />
     </children>
   </item>
-  <item nodeId="node-0x608ca40">
+  <item nodeId="node-0x2d6230">
     <command xml:space="preserve">read page 6 in book</command>
     <result xml:space="preserve">The section on Asgard seems to be unreadable as of now. Maybe you will be able to read this farther along your adventure.
 
@@ -2168,10 +2072,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x6091540" />
+      <child nodeId="node-0x2d62a0" />
     </children>
   </item>
-  <item nodeId="node-0x6091540">
+  <item nodeId="node-0x2d62a0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a bucket
@@ -2184,10 +2088,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="827">YES</temporary>
     <children>
-      <child nodeId="node-0x60a92d0" />
+      <child nodeId="node-0x2d6310" />
     </children>
   </item>
-  <item nodeId="node-0x60a92d0">
+  <item nodeId="node-0x2d6310">
     <command xml:space="preserve">fill bucket with fountain water</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2196,7 +2100,7 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="826">YES</temporary>
   </item>
-  <item nodeId="node-0x7cb3b70">
+  <item nodeId="node-0x2d6380">
     <command xml:space="preserve">break hand</command>
     <result xml:space="preserve">You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable.
 
@@ -2205,7 +2109,7 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="833">YES</temporary>
   </item>
-  <item nodeId="node-0x7c9ce20">
+  <item nodeId="node-0x2d63f0">
     <command xml:space="preserve">talk to heimdallr</command>
     <result xml:space="preserve">Heimdallr says he can&apos;t find his horn, Gjallarhorn. He seems pretty distraught about this. Is there anything else you would like to ask him about?
 
@@ -2214,10 +2118,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x57d5520" />
+      <child nodeId="node-0x2d6460" />
     </children>
   </item>
-  <item nodeId="node-0x57d5520">
+  <item nodeId="node-0x2d6460">
     <command xml:space="preserve">break statue</command>
     <result xml:space="preserve">You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable.
 
@@ -2226,10 +2130,10 @@ You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regu
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x8f1f760" />
+      <child nodeId="node-0x2d64d0" />
     </children>
   </item>
-  <item nodeId="node-0x8f1f760">
+  <item nodeId="node-0x2d64d0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -2244,10 +2148,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x319c40" />
+      <child nodeId="node-0x2d6540" />
     </children>
   </item>
-  <item nodeId="node-0x319c40">
+  <item nodeId="node-0x2d6540">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">While looking at Hel&apos;s Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...
 
@@ -2256,10 +2160,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x8fdcef0" />
+      <child nodeId="node-0x2d65b0" />
     </children>
   </item>
-  <item nodeId="node-0x8fdcef0">
+  <item nodeId="node-0x2d65b0">
     <command xml:space="preserve">combine staff with barb</command>
     <result xml:space="preserve">You combine the metal barb and the staff to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
 
@@ -2268,10 +2172,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0xa64aca0" />
+      <child nodeId="node-0x2d6620" />
     </children>
   </item>
-  <item nodeId="node-0xa64aca0">
+  <item nodeId="node-0x2d6620">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -2282,10 +2186,10 @@ You already have that.
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x7c6df70" />
+      <child nodeId="node-0x2d6690" />
     </children>
   </item>
-  <item nodeId="node-0x7c6df70">
+  <item nodeId="node-0x2d6690">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -2301,10 +2205,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x8f96c90" />
+      <child nodeId="node-0x2d6700" />
     </children>
   </item>
-  <item nodeId="node-0x8f96c90">
+  <item nodeId="node-0x2d6700">
     <command xml:space="preserve">give heimdallr horn</command>
     <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
 
@@ -2313,10 +2217,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="843">YES</temporary>
     <children>
-      <child nodeId="node-0x7c30ac0" />
+      <child nodeId="node-0x3c4a40" />
     </children>
   </item>
-  <item nodeId="node-0x7c30ac0">
+  <item nodeId="node-0x3c4a40">
     <command xml:space="preserve">talk to Heimdallr</command>
     <result xml:space="preserve">Heimdallr thanks you for finding Gjallarhorn and invites you to go into Valhalla.
 
@@ -2325,100 +2229,19 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="842">YES</temporary>
   </item>
-  <item nodeId="node-0x2d4850">
-    <command xml:space="preserve">x bookshelf</command>
-    <result xml:space="preserve">A large wooden bookshelf. Mostly empty, except for an old dusty book on one of the rows.
-
-In the bookshelf is an old book.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="19">YES</temporary>
-    <children>
-      <child nodeId="node-0x2120d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2120d0">
-    <command xml:space="preserve">take book</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="19">YES</temporary>
-    <children>
-      <child nodeId="node-0x5764f80" />
-    </children>
-  </item>
-  <item nodeId="node-0x5764f80">
-    <command xml:space="preserve">break statue</command>
-    <result xml:space="preserve">You reach up and break off the staff that the statue was holding.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="19">YES</temporary>
-    <children>
-      <child nodeId="node-0x5782a10" />
-    </children>
-  </item>
-  <item nodeId="node-0x5782a10">
-    <command xml:space="preserve">talk to heimdally</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="19">YES</temporary>
-    <children>
-      <child nodeId="node-0x5713740" />
-    </children>
-  </item>
-  <item nodeId="node-0x5713740">
-    <command xml:space="preserve">take to heimdallr</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="19">YES</temporary>
-    <children>
-      <child nodeId="node-0x60cd1f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x60cd1f0">
-    <command xml:space="preserve">talk to heimdallr</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="18">YES</temporary>
-  </item>
-  <item nodeId="node-0x30f3e0">
+  <item nodeId="node-0x3c3d60">
     <command xml:space="preserve">break statue</command>
     <result xml:space="preserve">You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="878">YES</temporary>
+    <temporary score="319">YES</temporary>
     <children>
-      <child nodeId="node-0x30f300" />
-      <child nodeId="node-0x30f370" />
+      <child nodeId="node-0x3c3e00" />
     </children>
   </item>
-  <item nodeId="node-0x30f370">
-    <command xml:space="preserve">breaking statue</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="13">YES</temporary>
-  </item>
-  <item nodeId="node-0x30f300">
+  <item nodeId="node-0x3c3e00">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -2431,41 +2254,41 @@ You can see Hel&apos;s Gate here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="878">YES</temporary>
+    <temporary score="319">YES</temporary>
     <children>
-      <child nodeId="node-0x30f8a0" />
-      <child nodeId="node-0x2218e0" />
+      <child nodeId="node-0x54e2f80" />
+      <child nodeId="node-0x3c3e50" />
     </children>
   </item>
-  <item nodeId="node-0x2218e0">
+  <item nodeId="node-0x3c3e50">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">While looking at Hel&apos;s Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="878">YES</temporary>
+    <temporary score="319">YES</temporary>
     <children>
-      <child nodeId="node-0x8f46b80" />
-      <child nodeId="node-0x60ac9b0" />
-      <child nodeId="node-0xa7525d0" />
+      <child nodeId="node-0x54e2c70" />
+      <child nodeId="node-0x54e2340" />
+      <child nodeId="node-0x3c3ea0" />
     </children>
   </item>
-  <item nodeId="node-0xa7525d0">
+  <item nodeId="node-0x3c3ea0">
     <command xml:space="preserve">combine barb with staff</command>
     <result xml:space="preserve">You combine the metal barb and the staff to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="878">YES</temporary>
+    <temporary score="319">YES</temporary>
     <children>
-      <child nodeId="node-0xa65eb60" />
-      <child nodeId="node-0x7cf24d0" />
-      <child nodeId="node-0x8fb43d0" />
+      <child nodeId="node-0x54e2260" />
+      <child nodeId="node-0x3c4130" />
+      <child nodeId="node-0x3c3ef0" />
     </children>
   </item>
-  <item nodeId="node-0x8fb43d0">
+  <item nodeId="node-0x3c3ef0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -2481,10 +2304,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="878">YES</temporary>
     <children>
-      <child nodeId="node-0xa798fa0" />
+      <child nodeId="node-0x3c3f40" />
     </children>
   </item>
-  <item nodeId="node-0xa798fa0">
+  <item nodeId="node-0x3c3f40">
     <command xml:space="preserve">use pole</command>
     <result xml:space="preserve">You can&apos;t see anything you would want to use the fishing pole on.
 
@@ -2493,10 +2316,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="878">YES</temporary>
     <children>
-      <child nodeId="node-0xa62ceb0" />
+      <child nodeId="node-0x3c4070" />
     </children>
   </item>
-  <item nodeId="node-0xa62ceb0">
+  <item nodeId="node-0x3c4070">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -2511,10 +2334,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="878">YES</temporary>
     <children>
-      <child nodeId="node-0x7c7fab0" />
+      <child nodeId="node-0x3c40c0" />
     </children>
   </item>
-  <item nodeId="node-0x7c7fab0">
+  <item nodeId="node-0x3c40c0">
     <command xml:space="preserve">use pole</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -2523,19 +2346,517 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="877">YES</temporary>
   </item>
-  <item nodeId="node-0x7cf24d0">
+  <item nodeId="node-0x3c4130">
     <command xml:space="preserve">use pole</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="850">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="168">YES</temporary>
     <children>
-      <child nodeId="node-0x262860" />
+      <child nodeId="node-0x3c41a0" />
+      <child nodeId="node-0x8345400" />
     </children>
   </item>
-  <item nodeId="node-0x262860">
+  <item nodeId="node-0x8345400">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0x560cab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x560cab0">
+    <command xml:space="preserve">give heimdallr horn</command>
+    <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x548b1a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x548b1a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate and a centerpiece here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x75e96c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x75e96c0">
+    <command xml:space="preserve">take map</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x5572fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5572fb0">
+    <command xml:space="preserve">unlatch centerpiece</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x5418530" />
+    </children>
+  </item>
+  <item nodeId="node-0x5418530">
+    <command xml:space="preserve">open latch</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x75ab040" />
+    </children>
+  </item>
+  <item nodeId="node-0x75ab040">
+    <command xml:space="preserve">with key</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x29c060" />
+    </children>
+  </item>
+  <item nodeId="node-0x29c060">
+    <command xml:space="preserve">open centerpiece</command>
+    <result xml:space="preserve">You open the centerpiece, revealing a map.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe026400" />
+    </children>
+  </item>
+  <item nodeId="node-0xe026400">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Valhalla
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe6a6fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe6a6fe0">
+    <command xml:space="preserve">take map</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x8326fa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8326fa0">
+    <command xml:space="preserve">open centerpiece</command>
+    <result xml:space="preserve">You open the centerpiece, revealing a map.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x83f2f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x83f2f70">
+    <command xml:space="preserve">take map</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe03acc0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe03acc0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the large gate)
+
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0b66c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0b66c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+You can see a bucket (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe025800" />
+    </children>
+  </item>
+  <item nodeId="node-0xe025800">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You successfully navigate through the winding path, finding the forest clearing pointed out on the map.
+
+Forest Clearing
+A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. 
+
+ To the north is Midgard.
+
+A large ornate golden key. It looks like it would fit into a large ornate golden gate.
+
+You can also see Mistletoe here.
+
+You&apos;ll have to get out of the Forest Clearing first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe607ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe607ba0">
+    <command xml:space="preserve">talk to mistletoe</command>
+    <result xml:space="preserve">The mistletoe looks unhappy
+1) &quot;Why are you unhappy?&quot; 
+2) Try to convince the mistletoe not to hurt Baldr 
+3) &quot;Is there anything I can do to help?&quot; 
+(or 0 to say nothing)
+&gt;&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0b1860" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0b1860">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot; .&quot;
+
+1) Try to convince the mistletoe not to hurt Baldr 
+2) &quot;Is there anything I can do to help?&quot; 
+(or 0 to say nothing)
+&gt;&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x832ff90" />
+    </children>
+  </item>
+  <item nodeId="node-0x832ff90">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot;Well then, good bye.&quot; 
+1) &quot;Is there anything I can do to help?&quot; 
+(or 0 to say nothing)
+&gt;&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x75b7e40" />
+    </children>
+  </item>
+  <item nodeId="node-0x75b7e40">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot; .&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x83405b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x83405b0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+You can see a bucket (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x836e900" />
+    </children>
+  </item>
+  <item nodeId="node-0x836e900">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You successfully navigate through the winding path, finding the forest clearing pointed out on the map.
+
+Forest Clearing
+A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. 
+
+ To the north is Midgard.
+
+A large ornate golden key. It looks like it would fit into a large ornate golden gate.
+
+You can also see Mistletoe here.
+
+You&apos;ll have to get out of the Forest Clearing first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x75105b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x75105b0">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x75f25f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x75f25f0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+You can see a bucket (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x56a6210" />
+    </children>
+  </item>
+  <item nodeId="node-0x56a6210">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe049a10" />
+    </children>
+  </item>
+  <item nodeId="node-0xe049a10">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Underworld
+A place that is surprisingly well lit for a place that seems so dark. A chilly wind makes you shiver. You can see the river Gjoll here. 
+
+ To the north is the Portal Room.
+
+You can see Hel&apos;s Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x5424ea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5424ea0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe623d40" />
+    </children>
+  </item>
+  <item nodeId="node-0xe623d40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate and a centerpiece (empty) here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x8337cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8337cb0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening Asgard&apos;s Gate)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x83f32d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x83f32d0">
+    <command xml:space="preserve">unlock asgard&apos;s gate</command>
+    <result xml:space="preserve">What do you want to unlock Asgard&apos;s Gate with?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x54d1a60" />
+    </children>
+  </item>
+  <item nodeId="node-0x54d1a60">
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">You unlock Asgard&apos;s Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe085760" />
+    </children>
+  </item>
+  <item nodeId="node-0xe085760">
+    <command xml:space="preserve">open asgard&apos;s gate</command>
+    <result xml:space="preserve">You open Asgard&apos;s Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0x8366490" />
+    </children>
+  </item>
+  <item nodeId="node-0x8366490">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+    <children>
+      <child nodeId="node-0xe60d130" />
+    </children>
+  </item>
+  <item nodeId="node-0xe60d130">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Asgard
+A grand place that is the city of the Gods. Unfortunately you aren&apos;t allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. 
+
+ To the west is Valhalla. 
+
+You can see Asgard&apos;s Gate here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="161">YES</temporary>
+  </item>
+  <item nodeId="node-0x3c41a0">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Underworld
 [Previous turn undone.]
@@ -2545,10 +2866,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="850">YES</temporary>
     <children>
-      <child nodeId="node-0x270dc0" />
+      <child nodeId="node-0x3c4210" />
     </children>
   </item>
-  <item nodeId="node-0x270dc0">
+  <item nodeId="node-0x3c4210">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -2559,7 +2880,7 @@ You already have that.
     <changed>YES</changed>
     <temporary score="849">YES</temporary>
   </item>
-  <item nodeId="node-0xa65eb60">
+  <item nodeId="node-0x54e2260">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -2567,13 +2888,14 @@ You already have that.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="833">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
     <children>
-      <child nodeId="node-0x7c2ae80" />
+      <child nodeId="node-0x2be540" />
+      <child nodeId="node-0x54e22d0" />
     </children>
   </item>
-  <item nodeId="node-0x7c2ae80">
+  <item nodeId="node-0x54e22d0">
     <command xml:space="preserve">blow horn</command>
     <result xml:space="preserve">You take a deep breath and blowing into Gjallarhorn. Pppbbttt. You make a noise similar to a loud fart. Maybe you should leave this to Heimdallr as he is no doubt better at this than you.
 
@@ -2582,7 +2904,579 @@ You already have that.
     <changed>YES</changed>
     <temporary score="832">YES</temporary>
   </item>
-  <item nodeId="node-0x60ac9b0">
+  <item nodeId="node-0x2be540">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x55cf0a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x55cf0a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+You can see a bucket (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x37b140" />
+    </children>
+  </item>
+  <item nodeId="node-0x37b140">
+    <command xml:space="preserve">take buckt</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x55d9e20" />
+    </children>
+  </item>
+  <item nodeId="node-0x55d9e20">
+    <command xml:space="preserve">take bucket</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe632880" />
+    </children>
+  </item>
+  <item nodeId="node-0xe632880">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0c62f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0c62f0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">It seems Heimdallr doesn&apos;t want you going in there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x75f8850" />
+    </children>
+  </item>
+  <item nodeId="node-0x75f8850">
+    <command xml:space="preserve">give heimdallr horn</command>
+    <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x83abc50" />
+    </children>
+  </item>
+  <item nodeId="node-0x83abc50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate and a centerpiece here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe01fe90" />
+    </children>
+  </item>
+  <item nodeId="node-0xe01fe90">
+    <command xml:space="preserve">open centerpiece</command>
+    <result xml:space="preserve">You open the centerpiece, revealing a map.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe640d10" />
+    </children>
+  </item>
+  <item nodeId="node-0xe640d10">
+    <command xml:space="preserve">take map</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x56203c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x56203c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the large gate)
+
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe062100" />
+    </children>
+  </item>
+  <item nodeId="node-0xe062100">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x55d72f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x55d72f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You successfully navigate through the winding path, finding the forest clearing pointed out on the map.
+
+Forest Clearing
+A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. 
+
+ To the north is Midgard.
+
+A large ornate golden key. It looks like it would fit into a large ornate golden gate.
+
+You can also see Mistletoe here.
+
+You&apos;ll have to get out of the Forest Clearing first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x75f5660" />
+    </children>
+  </item>
+  <item nodeId="node-0x75f5660">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe627e00" />
+    </children>
+  </item>
+  <item nodeId="node-0xe627e00">
+    <command xml:space="preserve">talk to mistletoe</command>
+    <result xml:space="preserve">The mistletoe looks unhappy
+1) &quot;Why are you unhappy?&quot; 
+2) Try to convince the mistletoe not to hurt Baldr 
+3) &quot;Is there anything I can do to help?&quot; 
+(or 0 to say nothing)
+&gt;&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x83c0d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x83c0d60">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot;Unhappy? Me? Noo, I&apos;m thinking you are mistaken. Why would I possibly be unhappy? It isn&apos;t as if I&apos;m the only living thing deemed too harmless to hurt anyone or anything.&quot; 
+1) Try to convince the mistletoe not to hurt Baldr 
+2) &quot;Is there anything I can do to help?&quot; 
+(or 0 to say nothing)
+&gt;&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x5424a20" />
+    </children>
+  </item>
+  <item nodeId="node-0x5424a20">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot;Baldr? I don&quot; have a grudge against anyone named Baldr, but if I see &quot;em, there is nothing stopping me from hurtin&quot; them. That&apos;ll show the Gods that I&apos;m not harmless.&quot;
+
+1) &quot;Is there anything I can do to help?&quot; 
+(or 0 to say nothing)
+&gt;&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x752b170" />
+    </children>
+  </item>
+  <item nodeId="node-0x752b170">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot;Well if ya&quot; want to be real nice you could get me somethin&quot; to drink. I&apos;m dyin&quot; out here out in the hot sun and all. Maybe I&apos;ll listen to what you have to say after ya&quot; get me some water.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x83b1420" />
+    </children>
+  </item>
+  <item nodeId="node-0x83b1420">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe669a80" />
+    </children>
+  </item>
+  <item nodeId="node-0xe669a80">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x543d130" />
+    </children>
+  </item>
+  <item nodeId="node-0x543d130">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate and a centerpiece (empty) here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c4b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c4b40">
+    <command xml:space="preserve">unlock asgards gate</command>
+    <result xml:space="preserve">What do you want to unlock Asgard&apos;s Gate with?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe6f1330" />
+    </children>
+  </item>
+  <item nodeId="node-0xe6f1330">
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">You unlock Asgard&apos;s Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x543da50" />
+    </children>
+  </item>
+  <item nodeId="node-0x543da50">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">Which do you mean, Asgard&apos;s Gate or the large gate?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x83c1530" />
+    </children>
+  </item>
+  <item nodeId="node-0x83c1530">
+    <command xml:space="preserve">asgards gate</command>
+    <result xml:space="preserve">You open Asgard&apos;s Gate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0bf9e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0bf9e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Asgard
+A grand place that is the city of the Gods. Unfortunately you aren&apos;t allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. 
+
+ To the west is Valhalla. 
+
+You can see Asgard&apos;s Gate and a fountain (in which is fountain water) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x7596d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x7596d60">
+    <command xml:space="preserve">fill bucket</command>
+    <result xml:space="preserve">What do you want to fill the bucket with?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x83747a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x83747a0">
+    <command xml:space="preserve">water</command>
+    <result xml:space="preserve">You fill the bucket with water from the fountain.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe05d5c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe05d5c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate and a centerpiece (empty) here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x5688770" />
+    </children>
+  </item>
+  <item nodeId="node-0x5688770">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Asgard
+A grand place that is the city of the Gods. Unfortunately you aren&apos;t allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. 
+
+ To the west is Valhalla. 
+
+You can see Asgard&apos;s Gate and a fountain (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0d0a60" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0d0a60">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Valhalla
+A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
+
+ To the west is Asgard&apos;s Gate, to the south is the Portal Room.
+
+You can see Asgard&apos;s Gate, a large gate and a centerpiece (empty) here.
+
+You&apos;ll have to get out of Valhalla first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x834ee50" />
+    </children>
+  </item>
+  <item nodeId="node-0x834ee50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Portal Room
+A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
+
+ To the south is the Underworld, Midgard it to the west, and there is a large gate to the north.
+
+ 
+You can also see a large gate, a statue and Heimdallr here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0xe0026a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe0026a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Midgard
+You find yourself in a Midgardian janitor&apos;s closet. Which is to say, a regular janitor&apos;s closet. There are some trash bags and a mop lying next to the door you just came in. 
+
+ To the south is a winding path and to the east is the Portal Room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x759c3f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x759c3f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You successfully navigate through the winding path, finding the forest clearing pointed out on the map.
+
+Forest Clearing
+A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. 
+
+ To the north is Midgard.
+
+You can see Mistletoe here.
+
+You&apos;ll have to get out of the Forest Clearing first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x8327110" />
+    </children>
+  </item>
+  <item nodeId="node-0x8327110">
+    <command xml:space="preserve">give mistletoe bucket</command>
+    <result xml:space="preserve">The mistletoe has no use for a plastic bucket.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x5439330" />
+    </children>
+  </item>
+  <item nodeId="node-0x5439330">
+    <command xml:space="preserve">give mistletoe water</command>
+    <result xml:space="preserve">(first taking fountain water)
+The mistletoe is pleased. You successfully convince the mistletoe not to hurt Baldr.
+
+
+
+    *** You have won ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="319">YES</temporary>
+    <children>
+      <child nodeId="node-0x54bc1c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x54bc1c0">
+    <command xml:space="preserve">give mistletoe fountain water</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="318">YES</temporary>
+  </item>
+  <item nodeId="node-0x54e2340">
     <command xml:space="preserve">combine pole and barb</command>
     <result xml:space="preserve">You can&apos;t use multiple objects with that verb.
 
@@ -2591,10 +3485,10 @@ You already have that.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x570f940" />
+      <child nodeId="node-0x54e23b0" />
     </children>
   </item>
-  <item nodeId="node-0x570f940">
+  <item nodeId="node-0x54e23b0">
     <command xml:space="preserve">combine pole with barb</command>
     <result xml:space="preserve">You combine the metal barb and the pole to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
 
@@ -2603,10 +3497,10 @@ You already have that.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x57138b0" />
+      <child nodeId="node-0x54e2420" />
     </children>
   </item>
-  <item nodeId="node-0x57138b0">
+  <item nodeId="node-0x54e2420">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -2617,10 +3511,10 @@ You already have that.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x7ce2ca0" />
+      <child nodeId="node-0x54e2490" />
     </children>
   </item>
-  <item nodeId="node-0x7ce2ca0">
+  <item nodeId="node-0x54e2490">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Gjallarhorn
@@ -2631,10 +3525,10 @@ You already have that.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x5717ba0" />
+      <child nodeId="node-0x54e2500" />
     </children>
   </item>
-  <item nodeId="node-0x5717ba0">
+  <item nodeId="node-0x54e2500">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -2650,10 +3544,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x7cb65e0" />
+      <child nodeId="node-0x54e2570" />
     </children>
   </item>
-  <item nodeId="node-0x7cb65e0">
+  <item nodeId="node-0x54e2570">
     <command xml:space="preserve">give horn to heimdallr</command>
     <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
 
@@ -2662,10 +3556,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x7ccae90" />
+      <child nodeId="node-0x54e25e0" />
     </children>
   </item>
-  <item nodeId="node-0x7ccae90">
+  <item nodeId="node-0x54e25e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Valhalla
 A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
@@ -2681,10 +3575,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x57bb280" />
+      <child nodeId="node-0x54e2650" />
     </children>
   </item>
-  <item nodeId="node-0x57bb280">
+  <item nodeId="node-0x54e2650">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -2693,10 +3587,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x5713790" />
+      <child nodeId="node-0x54e26c0" />
     </children>
   </item>
-  <item nodeId="node-0x5713790">
+  <item nodeId="node-0x54e26c0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">(first opening the large gate)
 
@@ -2713,10 +3607,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x8f37810" />
+      <child nodeId="node-0x54e2730" />
     </children>
   </item>
-  <item nodeId="node-0x8f37810">
+  <item nodeId="node-0x54e2730">
     <command xml:space="preserve">talk to heimdallr</command>
     <result xml:space="preserve">Heimdallr says he can&apos;t find his horn, Gjallarhorn. He seems pretty distraught about this. Is there anything else you would like to ask him?
 
@@ -2725,10 +3619,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x60b2b10" />
+      <child nodeId="node-0x54e27a0" />
     </children>
   </item>
-  <item nodeId="node-0x60b2b10">
+  <item nodeId="node-0x54e27a0">
     <command xml:space="preserve">ask him to open the gate</command>
     <result xml:space="preserve">I didn&apos;t understand that sentence.
 
@@ -2737,10 +3631,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x57af6e0" />
+      <child nodeId="node-0x54e2810" />
     </children>
   </item>
-  <item nodeId="node-0x57af6e0">
+  <item nodeId="node-0x54e2810">
     <command xml:space="preserve">ask to open the gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2749,10 +3643,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x57dacd0" />
+      <child nodeId="node-0x54e2880" />
     </children>
   </item>
-  <item nodeId="node-0x57dacd0">
+  <item nodeId="node-0x54e2880">
     <command xml:space="preserve">ask about opening the gate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2761,10 +3655,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x8f2e880" />
+      <child nodeId="node-0x54e28f0" />
     </children>
   </item>
-  <item nodeId="node-0x8f2e880">
+  <item nodeId="node-0x54e28f0">
     <command xml:space="preserve">ask heimdallr about opening the gate</command>
     <result xml:space="preserve">He doesn&apos;t seem to want to open the gate.
 
@@ -2773,10 +3667,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x57eb3c0" />
+      <child nodeId="node-0x54e2960" />
     </children>
   </item>
-  <item nodeId="node-0x57eb3c0">
+  <item nodeId="node-0x54e2960">
     <command xml:space="preserve">ask heimdallr about gate</command>
     <result xml:space="preserve">He doesn&apos;t seem to want to open the gate.
 
@@ -2785,10 +3679,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x8f3ecd0" />
+      <child nodeId="node-0x54e29d0" />
     </children>
   </item>
-  <item nodeId="node-0x8f3ecd0">
+  <item nodeId="node-0x54e29d0">
     <command xml:space="preserve">ask heimdallr about horn</command>
     <result xml:space="preserve">Heimdallr says he does not remember, but it should be somewhere nearby.
 
@@ -2797,10 +3691,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x221c20" />
+      <child nodeId="node-0x54e2a40" />
     </children>
   </item>
-  <item nodeId="node-0x221c20">
+  <item nodeId="node-0x54e2a40">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a fishing pole
@@ -2810,10 +3704,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x7c44380" />
+      <child nodeId="node-0x54e2ab0" />
     </children>
   </item>
-  <item nodeId="node-0x7c44380">
+  <item nodeId="node-0x54e2ab0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -2828,10 +3722,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x57d0d50" />
+      <child nodeId="node-0x54e2b20" />
     </children>
   </item>
-  <item nodeId="node-0x57d0d50">
+  <item nodeId="node-0x54e2b20">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2840,10 +3734,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x2f9dc0" />
+      <child nodeId="node-0x54e2b90" />
     </children>
   </item>
-  <item nodeId="node-0x2f9dc0">
+  <item nodeId="node-0x54e2b90">
     <command xml:space="preserve">take gjallarhorn</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2852,10 +3746,10 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="301">YES</temporary>
     <children>
-      <child nodeId="node-0x7c81150" />
+      <child nodeId="node-0x54e2c00" />
     </children>
   </item>
-  <item nodeId="node-0x7c81150">
+  <item nodeId="node-0x54e2c00">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a fishing pole
@@ -2865,7 +3759,7 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="300">YES</temporary>
   </item>
-  <item nodeId="node-0x8f46b80">
+  <item nodeId="node-0x54e2c70">
     <command xml:space="preserve">combine pole with barb</command>
     <result xml:space="preserve">You combine the metal barb and the pole to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
 
@@ -2874,10 +3768,10 @@ You can see Hel&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="311">YES</temporary>
     <children>
-      <child nodeId="node-0x8f38670" />
+      <child nodeId="node-0x54e2ce0" />
     </children>
   </item>
-  <item nodeId="node-0x8f38670">
+  <item nodeId="node-0x54e2ce0">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -2888,10 +3782,10 @@ You already have that.
     <changed>YES</changed>
     <temporary score="311">YES</temporary>
     <children>
-      <child nodeId="node-0x9a99e00" />
+      <child nodeId="node-0x54e2d50" />
     </children>
   </item>
-  <item nodeId="node-0x9a99e00">
+  <item nodeId="node-0x54e2d50">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -2907,10 +3801,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="311">YES</temporary>
     <children>
-      <child nodeId="node-0x57b9130" />
+      <child nodeId="node-0x54e2dc0" />
     </children>
   </item>
-  <item nodeId="node-0x57b9130">
+  <item nodeId="node-0x54e2dc0">
     <command xml:space="preserve">give heimdallr horn</command>
     <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
 
@@ -2919,10 +3813,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="311">YES</temporary>
     <children>
-      <child nodeId="node-0x5725d70" />
+      <child nodeId="node-0x54e2e30" />
     </children>
   </item>
-  <item nodeId="node-0x5725d70">
+  <item nodeId="node-0x54e2e30">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Valhalla
 A good-sized room that looks like it has seen its fair share of parties. It isn&apos;t necessarily dirty, but everything is worn. 
@@ -2938,10 +3832,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>YES</changed>
     <temporary score="311">YES</temporary>
     <children>
-      <child nodeId="node-0x5709a70" />
+      <child nodeId="node-0x54e2ea0" />
     </children>
   </item>
-  <item nodeId="node-0x5709a70">
+  <item nodeId="node-0x54e2ea0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">(first opening the large gate)
 
@@ -2958,10 +3852,10 @@ You can also see a large gate, a statue and Heimdallr here.
     <changed>YES</changed>
     <temporary score="311">YES</temporary>
     <children>
-      <child nodeId="node-0x260b50" />
+      <child nodeId="node-0x54e2f10" />
     </children>
   </item>
-  <item nodeId="node-0x260b50">
+  <item nodeId="node-0x54e2f10">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Midgard
@@ -2974,7 +3868,7 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="310">YES</temporary>
   </item>
-  <item nodeId="node-0x30f8a0">
+  <item nodeId="node-0x54e2f80">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">Gjallarhorn is at the bottom of the river, your arms are too short to reach it from here. Maybe if you had something to fish it out of the river...
 
@@ -2983,10 +3877,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f7f0" />
+      <child nodeId="node-0x54e2ff0" />
     </children>
   </item>
-  <item nodeId="node-0x30f7f0">
+  <item nodeId="node-0x54e2ff0">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">While looking at Hel&apos;s Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...
 
@@ -2995,10 +3889,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f840" />
+      <child nodeId="node-0x54e3060" />
     </children>
   </item>
-  <item nodeId="node-0x30f840">
+  <item nodeId="node-0x54e3060">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a metal barb
@@ -3008,10 +3902,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f050" />
+      <child nodeId="node-0x54e30d0" />
     </children>
   </item>
-  <item nodeId="node-0x30f050">
+  <item nodeId="node-0x54e30d0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -3026,10 +3920,10 @@ You can also see a large gate, a statue, a bookshelf (in which is an old book) a
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30efe0" />
+      <child nodeId="node-0x54e3140" />
     </children>
   </item>
-  <item nodeId="node-0x30efe0">
+  <item nodeId="node-0x54e3140">
     <command xml:space="preserve">take pole</command>
     <result xml:space="preserve">Taken.
 
@@ -3038,10 +3932,10 @@ You can also see a large gate, a statue, a bookshelf (in which is an old book) a
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ef70" />
+      <child nodeId="node-0x54e31b0" />
     </children>
   </item>
-  <item nodeId="node-0x30ef70">
+  <item nodeId="node-0x54e31b0">
     <command xml:space="preserve">break statue</command>
     <result xml:space="preserve">Violence isn&apos;t the answer to this one.
 
@@ -3050,10 +3944,10 @@ You can also see a large gate, a statue, a bookshelf (in which is an old book) a
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ef00" />
+      <child nodeId="node-0x54e3220" />
     </children>
   </item>
-  <item nodeId="node-0x30ef00">
+  <item nodeId="node-0x54e3220">
     <command xml:space="preserve">combine pole with barb</command>
     <result xml:space="preserve">You combine the metal barb and the pole to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
 
@@ -3062,10 +3956,10 @@ You can also see a large gate, a statue, a bookshelf (in which is an old book) a
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ee90" />
+      <child nodeId="node-0x54e3290" />
     </children>
   </item>
-  <item nodeId="node-0x30ee90">
+  <item nodeId="node-0x54e3290">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Underworld
@@ -3076,10 +3970,10 @@ Underworld
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ee20" />
+      <child nodeId="node-0x54e3300" />
     </children>
   </item>
-  <item nodeId="node-0x30ee20">
+  <item nodeId="node-0x54e3300">
     <command xml:space="preserve">take horn</command>
     <result xml:space="preserve">You stick the fishing pole into the water and skillfully maneuver the metal barb into the horn. With a quick motion, you bring the horn up to the surface and into your pocket.
 
@@ -3090,10 +3984,10 @@ You already have that.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30edb0" />
+      <child nodeId="node-0x54e3370" />
     </children>
   </item>
-  <item nodeId="node-0x30edb0">
+  <item nodeId="node-0x54e3370">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Gjallarhorn
@@ -3104,10 +3998,10 @@ You already have that.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ed40" />
+      <child nodeId="node-0x54e33e0" />
     </children>
   </item>
-  <item nodeId="node-0x30ed40">
+  <item nodeId="node-0x54e33e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Portal Room
@@ -3120,10 +4014,10 @@ You can see a large gate, a statue, a bookshelf (in which is an old book) and He
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ecd0" />
+      <child nodeId="node-0x54e3450" />
     </children>
   </item>
-  <item nodeId="node-0x30ecd0">
+  <item nodeId="node-0x54e3450">
     <command xml:space="preserve">give horn to heimdallr</command>
     <result xml:space="preserve">Heimdallr looks pleased. He decides to open the large gate for you.
 
@@ -3132,10 +4026,10 @@ You can see a large gate, a statue, a bookshelf (in which is an old book) and He
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ec60" />
+      <child nodeId="node-0x54e34c0" />
     </children>
   </item>
-  <item nodeId="node-0x30ec60">
+  <item nodeId="node-0x54e34c0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Valhalla
  
@@ -3149,10 +4043,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ebf0" />
+      <child nodeId="node-0x54e3530" />
     </children>
   </item>
-  <item nodeId="node-0x30ebf0">
+  <item nodeId="node-0x54e3530">
     <command xml:space="preserve">x centerpiece</command>
     <result xml:space="preserve">An intricate centerpiece showing what appears to be several of the worlds you have visited. Upon further inspection you can see there is a map attached.
 
@@ -3161,10 +4055,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30eb80" />
+      <child nodeId="node-0x54e35a0" />
     </children>
   </item>
-  <item nodeId="node-0x30eb80">
+  <item nodeId="node-0x54e35a0">
     <command xml:space="preserve">take map</command>
     <result xml:space="preserve">Taken.
 
@@ -3173,10 +4067,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30eb10" />
+      <child nodeId="node-0x54e3610" />
     </children>
   </item>
-  <item nodeId="node-0x30eb10">
+  <item nodeId="node-0x54e3610">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -3185,10 +4079,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30eaa0" />
+      <child nodeId="node-0x54e3680" />
     </children>
   </item>
-  <item nodeId="node-0x30eaa0">
+  <item nodeId="node-0x54e3680">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">(first opening Asgard&apos;s Gate)
 It seems to be locked.
@@ -3198,10 +4092,10 @@ It seems to be locked.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30ea30" />
+      <child nodeId="node-0x54e36f0" />
     </children>
   </item>
-  <item nodeId="node-0x30ea30">
+  <item nodeId="node-0x54e36f0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">(first opening the large gate)
 
@@ -3215,10 +4109,10 @@ You can see a large gate, a statue, a bookshelf (in which is an old book) and He
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e9c0" />
+      <child nodeId="node-0x54e3760" />
     </children>
   </item>
-  <item nodeId="node-0x30e9c0">
+  <item nodeId="node-0x54e3760">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Midgard
@@ -3231,10 +4125,10 @@ You can see a bucket (empty) here.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e950" />
+      <child nodeId="node-0x54e37d0" />
     </children>
   </item>
-  <item nodeId="node-0x30e950">
+  <item nodeId="node-0x54e37d0">
     <command xml:space="preserve">take bucket</command>
     <result xml:space="preserve">Taken.
 
@@ -3243,10 +4137,10 @@ You can see a bucket (empty) here.
     <changed>NO</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f0a0" />
+      <child nodeId="node-0x54e3840" />
     </children>
   </item>
-  <item nodeId="node-0x30f0a0">
+  <item nodeId="node-0x54e3840">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You successfully navigate through the winding path, finding the forest clearing pointed out on the map.
 
@@ -3262,10 +4156,10 @@ You&apos;ll have to get out of the Forest Clearing first.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f110" />
+      <child nodeId="node-0x54e38b0" />
     </children>
   </item>
-  <item nodeId="node-0x30f110">
+  <item nodeId="node-0x54e38b0">
     <command xml:space="preserve">take key</command>
     <result xml:space="preserve">Taken.
 
@@ -3274,10 +4168,10 @@ You&apos;ll have to get out of the Forest Clearing first.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f180" />
+      <child nodeId="node-0x54e3920" />
     </children>
   </item>
-  <item nodeId="node-0x30f180">
+  <item nodeId="node-0x54e3920">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Midgard
@@ -3288,10 +4182,10 @@ Midgard
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f1f0" />
+      <child nodeId="node-0x54e3990" />
     </children>
   </item>
-  <item nodeId="node-0x30f1f0">
+  <item nodeId="node-0x54e3990">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Portal Room
@@ -3304,10 +4198,10 @@ You can see a large gate, a statue, a bookshelf (in which is an old book) and He
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30f260" />
+      <child nodeId="node-0x54e3a00" />
     </children>
   </item>
-  <item nodeId="node-0x30f260">
+  <item nodeId="node-0x54e3a00">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Valhalla
  
@@ -3321,10 +4215,10 @@ You&apos;ll have to get out of Valhalla first.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e8e0" />
+      <child nodeId="node-0x54e3a70" />
     </children>
   </item>
-  <item nodeId="node-0x30e8e0">
+  <item nodeId="node-0x54e3a70">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">(first opening Asgard&apos;s Gate)
 It seems to be locked.
@@ -3334,10 +4228,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e870" />
+      <child nodeId="node-0x54e3ae0" />
     </children>
   </item>
-  <item nodeId="node-0x30e870">
+  <item nodeId="node-0x54e3ae0">
     <command xml:space="preserve">unlock gate</command>
     <result xml:space="preserve">Which do you mean, Asgard&apos;s Gate or the large gate?
 
@@ -3346,10 +4240,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e800" />
+      <child nodeId="node-0x54e3b50" />
     </children>
   </item>
-  <item nodeId="node-0x30e800">
+  <item nodeId="node-0x54e3b50">
     <command xml:space="preserve">Asgard&apos;s gate</command>
     <result xml:space="preserve">What do you want to unlock Asgard&apos;s Gate with?
 
@@ -3358,10 +4252,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e790" />
+      <child nodeId="node-0x54e3bc0" />
     </children>
   </item>
-  <item nodeId="node-0x30e790">
+  <item nodeId="node-0x54e3bc0">
     <command xml:space="preserve">key</command>
     <result xml:space="preserve">You unlock Asgard&apos;s Gate.
 
@@ -3370,10 +4264,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e720" />
+      <child nodeId="node-0x54e3c30" />
     </children>
   </item>
-  <item nodeId="node-0x30e720">
+  <item nodeId="node-0x54e3c30">
     <command xml:space="preserve">open gate</command>
     <result xml:space="preserve">Which do you mean, Asgard&apos;s Gate or the large gate?
 
@@ -3382,10 +4276,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e6b0" />
+      <child nodeId="node-0x54e3ca0" />
     </children>
   </item>
-  <item nodeId="node-0x30e6b0">
+  <item nodeId="node-0x54e3ca0">
     <command xml:space="preserve">asgard&apos;s gate</command>
     <result xml:space="preserve">You open Asgard&apos;s Gate.
 
@@ -3394,10 +4288,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e640" />
+      <child nodeId="node-0x54e3d10" />
     </children>
   </item>
-  <item nodeId="node-0x30e640">
+  <item nodeId="node-0x54e3d10">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Asgard
@@ -3410,10 +4304,10 @@ You can see Asgard&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e5d0" />
+      <child nodeId="node-0x54e3d80" />
     </children>
   </item>
-  <item nodeId="node-0x30e5d0">
+  <item nodeId="node-0x54e3d80">
     <command xml:space="preserve">fill bucket with fountain wate</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -3422,10 +4316,10 @@ You can see Asgard&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e560" />
+      <child nodeId="node-0x54e3df0" />
     </children>
   </item>
-  <item nodeId="node-0x30e560">
+  <item nodeId="node-0x54e3df0">
     <command xml:space="preserve">rfill bucket with fountain water</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -3434,10 +4328,10 @@ You can see Asgard&apos;s Gate here.
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
     <children>
-      <child nodeId="node-0x30e4f0" />
+      <child nodeId="node-0x54e3e60" />
     </children>
   </item>
-  <item nodeId="node-0x30e4f0">
+  <item nodeId="node-0x54e3e60">
     <command xml:space="preserve">fill bucket with fountain water</command>
     <result xml:space="preserve">You fill the bucket with water from the fountain.
 
