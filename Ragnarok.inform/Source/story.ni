@@ -1,9 +1,8 @@
 "Ragnarok" by Marissa Takebayashi
 
-[commented sections of code are parts I did not write.]
-
 Use no scoring.
 
+[Did a quick google search and found a discussion on how to disable "take all". Answer provided by JDC.]
 Rule for deciding whether all includes something: it does not.
 
 Instead of examining player, say "You are a human of average height and weight. You are a generally average person, not having done any astounding feats of bravery, or seen anything particularly extraordinary. Maybe your wish for adventure will soon be fulfilled."
@@ -26,6 +25,7 @@ Instead of attacking the statue:
     	move staff to player; 
     	say "You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable."
 
+[Had a lot of trouble finding the right verb for this, since I didn't see a "break" command in the list of defined actions (In the Inform 7 Handbook)]
 Instead of attacking the staff:
 	move staff to player; 
     	say "You reach up and break off the staff that the statue was holding. It is a lot heavier than you expected, but still manageable."
@@ -39,7 +39,8 @@ The bookshelf is a thing in the Portal Room. The description is "A large wooden 
 
 Instead of taking the bookshelf:
 	say "I don't think you can carry that."
-
+	
+[Didn't want the book to appear when the list of items in the room appeared. This way the bookshelf doesn't appear as one of the "things" in the room description and the book is not listed.]
 Rule for writing a paragraph about the bookshelf:
 	say " "
 
@@ -47,12 +48,14 @@ The old book is in the bookshelf. The old book has a number called the last page
 
 Understand "ancient book" or "book" or "dusty book" or "dusty old book" as old book.
 
-[Understand the command "read" as something new.
+[CMost of the rules allowing the player to read the book are from the recipe book (Chapter 9.6, example "Pages")]
+Understand the command "read" as something new.
 
 Understand "read [something]" or "consult [something]" or "read in/from [something]" as reading. Reading is an action applying to one thing.
 
 Understand "read [number] in/from/of [something]" or "read page [number] in/from/of [something]" or "look up page [number] in/from/of [something]" or "consult page [number] in/from/of [something]" as reading it in. Reading it in is an action applying to one number and one thing.
 
+[Making the pages values, so if the player uses words instead of numbers, the code and firgure out which page it means]
 Named page is a kind of value. The named pages are first page, last page, next page, previous page.
 To decide what number is the effective value of (L - last page): 
     decide on the length of the book.
@@ -69,13 +72,13 @@ Understand "read [named page] in/from/of [something]" or "read the [named page] 
 
 Does the player mean reading something in the old book: it is very likely.
 
+[Added part about the book being unreadable if wet. Had a bit of trouble wording the command so Inform allowed it, but it finally works.]
 This is the book requirement rule: 
 	if the player is not carrying the old book:
 		say "You're not reading anything.";
-		stop the action;]
 	if the old book is wet, say "The book is too soaked to read, thanks to your carelessness." instead.
 
-[Check reading it relatively in: 
+Check reading it relatively in: 
     if the second noun is not the old book, say "There are no pages in [the second noun]." instead; 
     abide by the book requirement rule.
 
@@ -97,7 +100,7 @@ Carry out reading it in:
 
 Check reading: 
     if the noun is not the old book, say "There are no pages in [the noun]." instead; 
-    abide by the book requirement rule.]
+    abide by the book requirement rule.
 
 Table of Book Contents
 page	content
@@ -107,7 +110,8 @@ page	content
 4	"[bold type] About Valhalla. [roman type] Valhalla, where fallen heroes come to celebrate. Seeing as you aren't dead yet, and haven't done anything particularly heroic, Valhalla doesn't hold that much significance to you. Although I would look around closely, you never know what you might find."
 5	"[bold type] About the Forest. [roman type] The forest, home to the infamous mistletoe. Although mistletoe may seem unimportant, it plays a large role in the upcoming events. To stop the Ragnarok, you must secure a vow from it, saying that it promises to not harm Baldr. However, this is easier said than done, since the mistletoe doesn't seem up to bargaining in its current mood."
 6	"[bold type] About Asgard. [roman type] The home of the Gods. Or the ones that you care about, anyway. Everything here is extravagant and well-polished. Although you are not allowed into the actual city, the fountain near the entrance shows the lavishness of the Gods quite well. Pure, fine, Asgardian water flows from this fountain. It makes you thirsty just looking at it."
-	
+
+[Added in rules so that pages were unlocked as the game progresses. The book almost acts as a hint system, my sister said the book was pretty useful when she beta tested.]	
 To read page (N - a number): 
 	now the last page read of the old book is N;
 	if there is a content corresponding to a page of N in the Table of Book Contents: 
@@ -140,6 +144,7 @@ To read page (N - 6):
 		choose row with a page of N in the Table of Book Contents;
 		say "You read: '[content entry]'[paragraph break]"
 		
+[Wasn't sure how to tie this back into making it follow the Book Requirement Rule. So if the player writes "read book" without carrying the book, this error appears instead of the one described in the requirement rule.]		
 Understand "read book" as a mistake ("What page do you want to read in the book?").
 
 Understand "read book page 1/one/2/two/3/three/4/four/5/five/6/six" as a mistake ("What page IN the book would you like to read?").
@@ -206,6 +211,7 @@ Before opening large gate:
 
 The map is in the centerpiece. The description is "A map of Midgard and its surrounding forests, there seems to be a clearing pointed out just south of Midgard."
 
+[Making secret items taken from the Inform 7 Handbook.]
 Rule for printing room description details of a closed container: stop
 
 The centerpiece is a container in Valhalla. It is closed and openable. The description is "An intricate centerpiece showing what appears to be several of the worlds you have visited suspended on a the branches of a tree. Upon further inspection you can see there is a small opening"
@@ -274,6 +280,7 @@ Gjallarhorn is a thing in Gjoll. "The famous horn of Heimdallr, I'm sure he want
 
 Understand "horn" as Gjallarhorn.
 
+[My sister said it would be great if you could actually blow into Heimdallr's horn.]
 Blowing into is an action applying to one visible thing. Understand "blow into [something]" or "blow [something]" as blowing into.
 
 Instead of blowing into Gjallarhorn:
@@ -338,10 +345,11 @@ Check filling it with:
 	if the noun is bucket and the second noun is fountain water:
 		say "You fill the bucket with water from the fountain.";
 		move fountain water to the bucket.
-		
-[A thing can be wet or dry.
 
-Before printing the name of a wet thing: say "wet ". Understand the wet property as describing a thing.]
+[I was trying to make it so that the property of certain items changed if they were wet. The idea of using different properties is from the Inform 7 Recipe Book.]		
+A thing can be wet or dry.
+
+Before printing the name of a wet thing: say "wet ". Understand the wet property as describing a thing.
 
 Instead of inserting the old book into the bucket:
 	if the fountain water is in the bucket:
@@ -392,7 +400,8 @@ Mistletoe is a person in the Forest Clearing. The description of Mistletoe is "A
 
 Understand "plant" or "the Mistletoe" as Mistletoe.
 
-[Include Simple Chat by Mark Tilford.
+[I wanted a menue based chat, and tried using the Quip-Based Conversation extension by Michael Martin, but was having trouble trying to get it to compile. So I changed it for simple chat, they look pretty similar in game anyway. I changed some of the code below a bit by addind another text option and getting rid of some of code I didn't need for my game.]
+Include Simple Chat by Mark Tilford.
 
 Instead of talking to mistletoe: run a conversation from hello mistletoe.
 
@@ -407,7 +416,7 @@ Carry out finding responses to feeling: link to good bye; link to helping hand.
 
 Report giving link to good bye: instead say "Try to convince the mistletoe not to hurt Baldr ".
 Report giving text for good bye: deactivate good bye; say "'Baldr? I don' have a grudge against anyone named Baldr, but if I see 'em, there is nothing stopping me from hurtin' them. That'll show the Gods that I'm not harmless.'" instead.
-Carry out finding responses to good bye: link to helping hand; link to feeling.]
+Carry out finding responses to good bye: link to helping hand; link to feeling.
 
 Report giving link to helping hand: say "'Is there anything I can do to help?' " instead.
 Report giving text for helping hand: deactivate helping hand; say "'Well if ya' want to be real nice you could get me somethin' to drink. I'm dyin' out here out in the hot sun and all. Maybe I'll listen to what you have to say after ya' get me some water.'" instead.

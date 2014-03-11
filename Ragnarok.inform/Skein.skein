@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x2f8c80" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x84f7fb0" />
+  <activeNode nodeId="node-0x578ffc0" />
   <item nodeId="node-0x2f8c80">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -12,7 +12,7 @@ You wake up in a strange room, not entirely knowing why you are here, or even wh
 
 Ragnarok
 An Interactive Fiction by Marissa Takebayashi
-Release 1 / Serial number 140310 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140311 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Portal Room
 A mostly empty room. The walls are all a bland grey and there are no windows. There is a bookshelf leaning against one of the walls. 
@@ -27,7 +27,7 @@ You can also see a large gate, a statue and Heimdallr here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="725">NO</temporary>
+    <temporary score="726">NO</temporary>
     <children>
       <child nodeId="node-0x323c90" />
       <child nodeId="node-0x325eb0" />
@@ -36,6 +36,7 @@ You can also see a large gate, a statue and Heimdallr here.
       <child nodeId="node-0x572a0b0" />
       <child nodeId="node-0x56735f0" />
       <child nodeId="node-0x56732e0" />
+      <child nodeId="node-0x578ffc0" />
       <child nodeId="node-0xac9dca0" />
       <child nodeId="node-0x2f8cd0" />
     </children>
@@ -2066,6 +2067,15 @@ The book is too soaked to read, thanks to your carelessness.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="664">YES</temporary>
+  </item>
+  <item nodeId="node-0x578ffc0">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">You are a human of average height and weight. You are a generally average person, not having done any astounding feats of bravery, or seen anything particularly extraordinary. Maybe your wish for adventure will soon be fulfilled.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="725">YES</temporary>
   </item>
   <item nodeId="node-0x56732e0">
     <command xml:space="preserve">use horn</command>
@@ -4497,7 +4507,6 @@ You can see Hel&apos;s Gate here.
     <changed>NO</changed>
     <temporary score="725">YES</temporary>
     <children>
-      <child nodeId="node-0x57725f0" />
       <child nodeId="node-0x325d60" />
       <child nodeId="node-0x3248d0" />
       <child nodeId="node-0x323fa0" />
@@ -6610,65 +6619,6 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="318">YES</temporary>
-  </item>
-  <item nodeId="node-0x57725f0">
-    <command xml:space="preserve">x gate</command>
-    <result xml:space="preserve">A twisting metal gate that seems to stretch on forever.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x5632480" />
-    </children>
-  </item>
-  <item nodeId="node-0x5632480">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a metal barb
-  a staff
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x9cd27a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x9cd27a0">
-    <command xml:space="preserve">combine staff and barb</command>
-    <result xml:space="preserve">You can&apos;t use multiple objects with that verb.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x84c67a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x84c67a0">
-    <command xml:space="preserve">combine staff with barb</command>
-    <result xml:space="preserve">You combine the metal barb and the staff to make a fishing pole. Although you probably won&apos;t use it to catch fish. Don&apos;t worry, there are other things in the river you can catch besides fish.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x57f4ea0" />
-    </children>
-  </item>
-  <item nodeId="node-0x57f4ea0">
-    <command xml:space="preserve">x gate</command>
-    <result xml:space="preserve">A twisting metal gate that seems to stretch on forever.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="108">YES</temporary>
   </item>
   <item nodeId="node-0x323c90">
     <command xml:space="preserve">x staff</command>
