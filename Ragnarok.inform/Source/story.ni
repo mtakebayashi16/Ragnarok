@@ -1,8 +1,12 @@
 "Ragnarok" by Marissa Takebayashi
 
+[commented sections of code are parts I did not write.]
+
 Use no scoring.
 
-Instead of examining player, say "You are a human of average height and weight. You are a generally average person, not having done any astounding feats of bravery, or seen anything particularly extrodinary. Maybe your wish for adventure will soon be fufilled."
+Rule for deciding whether all includes something: it does not.
+
+Instead of examining player, say "You are a human of average height and weight. You are a generally average person, not having done any astounding feats of bravery, or seen anything particularly extraordinary. Maybe your wish for adventure will soon be fulfilled."
 
 When play begins: say "You wake up in a strange room, not entirely knowing why you are here, or even where you are. There isn't much in the room to suggest why you are here, maybe you can find something in this room to help you remember."
 
@@ -39,11 +43,11 @@ Instead of taking the bookshelf:
 Rule for writing a paragraph about the bookshelf:
 	say " "
 
-The old book is in the bookshelf. The old book has a number called the last page read. The old book has a number called the length. The length of the old book is 6."An ancient book that seems to be about the various myths and places in these worlds."
+The old book is in the bookshelf. The old book has a number called the last page read. The old book has a number called the length. The length of the old book is 6."An ancient book that seems to be about the various myths and places in these worlds. There appears to be six pages in the book that are a mix of readable and unreadable characters."
 
 Understand "ancient book" or "book" or "dusty book" or "dusty old book" as old book.
 
-Understand the command "read" as something new.
+[Understand the command "read" as something new.
 
 Understand "read [something]" or "consult [something]" or "read in/from [something]" as reading. Reading is an action applying to one thing.
 
@@ -66,9 +70,12 @@ Understand "read [named page] in/from/of [something]" or "read the [named page] 
 Does the player mean reading something in the old book: it is very likely.
 
 This is the book requirement rule: 
-    if the player is not carrying the old book, say "You're not reading anything." instead.
+	if the player is not carrying the old book:
+		say "You're not reading anything.";
+		stop the action;]
+	if the old book is wet, say "The book is too soaked to read, thanks to your carelessness." instead.
 
-Check reading it relatively in: 
+[Check reading it relatively in: 
     if the second noun is not the old book, say "There are no pages in [the second noun]." instead; 
     abide by the book requirement rule.
 
@@ -90,14 +97,14 @@ Carry out reading it in:
 
 Check reading: 
     if the noun is not the old book, say "There are no pages in [the noun]." instead; 
-    abide by the book requirement rule.
+    abide by the book requirement rule.]
 
 Table of Book Contents
 page	content
 1	"[bold type] About the Ragnarok. [roman type] In Norse mythology, Ragnarök is a series of events, including a great battle that will result in the death of a number of Gods. The Gods, understandably, don't want to die just yet, so they have appointed you to stop it. It is a great honor, they assure you, just don't fail. The Ragnarok officially begins when one of the Gods, Baldr, dies by being impaled with a spear covered in mistletoe, since it was the only living thing, in all of the nine realms, that hadn't been asked not to hurt Baldr. A minor oversight by Baldr's mother, who tried to prevent his death. In order to stop this from happening, you must convince the mistletoe not to harm Baldr."
 2	"[bold type] About the Underworld. [roman type] The Underworld is Hel's domain. She doesn't appear to be there at the moment, but she left the gate open, allowing you to walk up to the river Gjoll. Heimdallr's horn, Gjallarhorn, comes from this river. However, the river Gjoll is said to feel like thousands of knives, so I wouldn't be to hasty to go swimming. Maybe if you had some sort of pole..."
-3	"[bold type] About Midgard. [roman type] For the time being, the Gods have restricted the accessible area of your homeworld to a janitor's closet and a small forest just outside. They say it is incentive for you to work faster. Not everything here is trash, though, and you may even find something to help you on your journey."
-4	"[bold type] About Valhalla. [roman type] Valhalla, where fallen heros come to celebrate. Seeing as you aren't dead yet, and haven't done anything particularly heroic, Valhalla doesn't hold that much significance to you. Although I would look around closely, you never know what you might find."
+3	"[bold type] About Midgard. [roman type] For the time being, the Gods have restricted the accessible area of your home world to a janitor's closet and a small forest just outside. They say it is incentive for you to work faster. Not everything here is trash, though, and you may even find something to help you on your journey."
+4	"[bold type] About Valhalla. [roman type] Valhalla, where fallen heroes come to celebrate. Seeing as you aren't dead yet, and haven't done anything particularly heroic, Valhalla doesn't hold that much significance to you. Although I would look around closely, you never know what you might find."
 5	"[bold type] About the Forest. [roman type] The forest, home to the infamous mistletoe. Although mistletoe may seem unimportant, it plays a large role in the upcoming events. To stop the Ragnarok, you must secure a vow from it, saying that it promises to not harm Baldr. However, this is easier said than done, since the mistletoe doesn't seem up to bargaining in its current mood."
 6	"[bold type] About Asgard. [roman type] The home of the Gods. Or the ones that you care about, anyway. Everything here is extravagant and well-polished. Although you are not allowed into the actual city, the fountain near the entrance shows the lavishness of the Gods quite well. Pure, fine, Asgardian water flows from this fountain. It makes you thirsty just looking at it."
 	
@@ -133,7 +140,11 @@ To read page (N - 6):
 		choose row with a page of N in the Table of Book Contents;
 		say "You read: '[content entry]'[paragraph break]"
 		
-Understand "read book" as a mistake ("You should have a page number before the read command.").
+Understand "read book" as a mistake ("What page do you want to read in the book?").
+
+Understand "read book page 1/one/2/two/3/three/4/four/5/five/6/six" as a mistake ("What page IN the book would you like to read?").
+
+Understand "page 1/one/2/two/3/three/4/four/5/five/6/six" as a mistake ("Page one of what?").
 
 Mood is a kind of value. The moods are unhappy, pleased, and suspicious. People have mood. The mood of Heimdallr is unhappy. The mood of Mistletoe is unhappy.
 
@@ -169,7 +180,13 @@ Instead of giving Gjallarhorn to Heimdallr:
 	move Gjallarhorn to Heimdallr;
 	say "Heimdallr looks [the mood of Heimdallr]. He decides to open the large gate for you."
 
-The large gate is south of Valhalla and north of the Portal Room. The large gate is a door. The description of the large gate is "A large gate that must be several stories high. It doesn't look like you are going to be able to open it without Heimdallr's consent."
+The large gate is south of Valhalla and north of the Portal Room. The large gate is a door. 
+
+Instead of examining large gate:
+	if Heimdallr is carrying Gjallarhorn:
+		say "A large gate that must be several stories high.";
+	if Heimdallr is not carrying Gjallarhorn:
+		say "A large gate that must be several stories high. It doesn't look like you are going to be able to open it without Heimdallr's consent."
 
 Valhalla is a room."A good-sized room that looks like it has seen its fair share of parties. It isn't necessarily dirty, but everything is worn. [paragraph break] To the west is Asgard's Gate, to the south is the Portal Room."
 
@@ -178,8 +195,15 @@ Before going to Valhalla:
 		say "It seems Heimdallr doesn't want you going in there.";
 		stop the action;
 	otherwise:
-		move player to Valhalla.
+		continue the action.
 		
+Before opening large gate:
+	if Heimdallr is not carrying Gjallarhorn:
+		say "It doesn't look like you are going to be able to open the large gate without Heimdallr's consent.";
+		stop the action;
+	if Heimdallr is carrying Gjallarhorn:
+		continue the action.
+
 The map is in the centerpiece. The description is "A map of Midgard and its surrounding forests, there seems to be a clearing pointed out just south of Midgard."
 
 Rule for printing room description details of a closed container: stop
@@ -189,8 +213,6 @@ The centerpiece is a container in Valhalla. It is closed and openable. The descr
 Small opening is scenery in Valhalla. The description of the small opening is "A small opening in the centerpiece, it appears to be closed."
 
 Understand "opening" as small opening.
-
-Instead of entering
 
 Understand "center piece" as the centerpiece.
 
@@ -210,8 +232,16 @@ Hel's Gate is a thing in the Underworld.
 Instead of taking Hel's Gate, say "I don't think you can carry that."
 
 Instead of examining Hel's Gate:
-	say "While looking at Hel's Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...";
-	move metal barb to player.
+	if player is carrying the metal barb:
+		say "A twisting metal gate that seems to stretch on forever.";
+		stop the action;
+	if player is carrying the fishing pole:
+		say "A twisting metal gate that seems to stretch on forever.";
+		stop the action;
+	else:
+		say "While looking at Hel's Gate, you decide that Hel has very interesting decorating tastes. You notice that one of the metal barbs on the gate is loose. You can just reach it. When you hold it, you realize it is a little larger than you expected. It looks like you could combine this with something long to create some sort of fishing pole...";
+		move metal barb to player;
+		stop the action.
 
 The metal barb is a thing. The description of the metal barb is "A small metal barb. It might be more useful if used with another item."
 
@@ -288,7 +318,7 @@ Understand "trash bag" or "trash bags" or "bags" as trash.
 Instead of taking the trash:
 	say "I wouldn't want to touch that unless you want to smell like garbage for the rest of the week."
 	
-Instead of smelling the trash, say "You proced to stick your face into the trash bag trying to identify the smell, but only succeed in gagging horribly."
+Instead of smelling the trash, say "You proceed to stick your face into the trash bag trying to identify the smell, but only succeed in gagging horribly."
 
 The mop is scenery in Midgard. "A blue and white dust mop."
 
@@ -304,16 +334,26 @@ Understand "fill [something] with [something]" or "pour [something] into/in [som
 
 Check filling it with:
 	if the noun is not the bucket, say "Fill? What are you filling?";
-	if the noun is the bucket and the second noun is Gjoll, say "The water looks murky and generally unpleasent. You decide to leave the river Gjoll right where it is.";
+	if the noun is the bucket and the second noun is Gjoll, say "The water looks murky and generally unpleasant. You decide to leave the river Gjoll right where it is.";
 	if the noun is bucket and the second noun is fountain water:
 		say "You fill the bucket with water from the fountain.";
 		move fountain water to the bucket.
 		
-[Instead of putting noun in bucket:
-	if the noun is not fountain water:
-		say "Why would you want to put that in the bucket? Your pockets seem to be near endless anyway."]
+[A thing can be wet or dry.
+
+Before printing the name of a wet thing: say "wet ". Understand the wet property as describing a thing.]
+
+Instead of inserting the old book into the bucket:
+	if the fountain water is in the bucket:
+		say "Now the book is all wet. Way to go.";
+		now the book is wet;
+		continue the action;
+	if the fountain water is not in the bucket:
+		continue the action.
+			
+Instead of examining wet old book, say "An ancient book that seems to be about the various myths and places in these worlds. It is soaking wet."
 	
-Asgard is a room. "A grand place that is the city of the Gods. Unfortunately you aren't allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. [paragraph break] To the west is Valhalla. "
+Asgard is a room. "A grand place that is the city of the Gods. Unfortunately you aren't allowed any farther into the city, but from here you can access a large marble fountain, but that is about it. [paragraph break] To the east is Valhalla. "
 
 Asgard's Gate is east of Asgard and west of Valhalla. Asgard's Gate is a door. Asgard's Gate is locked and lockable. The golden key unlocks Asgard's Gate. The description of Asgard's Gate is "A large ornate golden gate. It is decorated almost to the point of being ridiculously cheesy. You almost expect to hear a choir singing when you look at it."
 
@@ -344,15 +384,15 @@ Before going to Forest Clearing:
 		stop the action;
 	otherwise:
 		say "You successfully navigate through the winding path, finding the forest clearing pointed out on the map.";
-		move player to Forest Clearing.
+		continue the action.
 
 The Forest Clearing is a room. It is south of Midgard. "A small grassy patch in the middle of the forest. There are tall pine trees surrounding the area. Sunlight filters down into the clearing, but the rest of the forest is obscured. [paragraph break] To the north is Midgard."
 
-Mistletoe is a person in the Forest Clearing. The description of Mistletoe is "A small green plant. It looks pretty harmless in its current state."
+Mistletoe is a person in the Forest Clearing. The description of Mistletoe is "A small green plant. It looks pretty harmless in its current state. The mistletoe looks [the mood of mistletoe]."
 
 Understand "plant" or "the Mistletoe" as Mistletoe.
 
-Include Simple Chat by Mark Tilford.
+[Include Simple Chat by Mark Tilford.
 
 Instead of talking to mistletoe: run a conversation from hello mistletoe.
 
@@ -367,7 +407,7 @@ Carry out finding responses to feeling: link to good bye; link to helping hand.
 
 Report giving link to good bye: instead say "Try to convince the mistletoe not to hurt Baldr ".
 Report giving text for good bye: deactivate good bye; say "'Baldr? I don' have a grudge against anyone named Baldr, but if I see 'em, there is nothing stopping me from hurtin' them. That'll show the Gods that I'm not harmless.'" instead.
-Carry out finding responses to good bye: link to helping hand; link to feeling.
+Carry out finding responses to good bye: link to helping hand; link to feeling.]
 
 Report giving link to helping hand: say "'Is there anything I can do to help?' " instead.
 Report giving text for helping hand: deactivate helping hand; say "'Well if ya' want to be real nice you could get me somethin' to drink. I'm dyin' out here out in the hot sun and all. Maybe I'll listen to what you have to say after ya' get me some water.'" instead.
@@ -377,13 +417,22 @@ Instead of giving fountain water to Mistletoe:
 	now Mistletoe is pleased;
 	move fountain water to Mistletoe;
 	say "The mistletoe is [the mood of Mistletoe]. You successfully convince the mistletoe not to hurt Baldr."
-	
+		
+Watering is an action applying to one visible thing. Understand "water [someone]" or "put water on [someone]" as watering. 
+
+Instead of watering the Mistletoe:
+	now Mistletoe is pleased;
+	move fountain water to Mistletoe;
+	say "The mistletoe is [the mood of Mistletoe]. You successfully convince the mistletoe not to hurt Baldr."
+
 Instead of giving bucket to Mistletoe:
 	say "The mistletoe has no use for a plastic bucket."
 
 The trees are scenery in the Forest Clearing. "Large pine trees that seem to stretch on forever."
 
-The golden key is a thing in the Forest Clearing. "A large ornate golden key. It looks like it would fit into a large ornate golden gate."
+The path is scenery in Midgard. The description of the path is "A long wandering dirt path leading off to somewhere in the forest."
+
+The golden key is a thing in the Forest Clearing. The description is "A large ornate golden key. It looks like it would fit into a large ornate golden gate."
 
 Understand "key" or "ornate key" or "large key" or "large ornate golden key" or "ornate golden key" or "large key" as golden key.
 
